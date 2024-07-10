@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="KO">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>인쇄물 주문서</title>
+    <script src="https://kit.fontawesome.com/fb34744a8e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/ezSHW/printorder/PrintOrder.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 1024px)" href="/ezSHW/printorder/PrintOrderT.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="order_area tab">
+            <h2>인쇄주문</h2>
+            <!-- <ul>
+                <li data-id="tab1"><a href="#">전단</a></li>
+                <li data-id="tab2"><a href="#">명함</a></li>
+                <li data-id="tab3"><a href="#">스티커</a></li>
+                <li data-id="tab4"><a href="#">봉투</a></li>
+            </ul> -->
+            <div id="tab1" class="conbox on">
+                <div class="selectList">
+                    <div class="plist">
+                        <h4>인쇄품목</h4>
+                        <ul>
+                            <li>
+                                <input type="radio" id="kind1" name="product" checked="checked">
+                                <label for="kind1"></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="kind2" name="product">
+                                <label>문고리전단</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="psize">
+                        <h4>규격선택</h4>
+                        <ul id="psizeList">
+                            <li><input type="radio" id="a4size" name="size"><label for="a4size">A4(국8절)</label></li>
+                        </ul>
+                    </div>
+                    <div class="thin">
+                        <div>
+                            <h4>재질/도수선택</h4>
+                            <ul id="thinList">
+                                <li><input type="radio" id="100Side" name="weight"><label
+                                        for="100Side">아트지100g/단면4도</label></li>
+                                <li><input type="radio" id="100BSide" name="weight"><label
+                                        for="100BSide">아트지100g/양면8도</label></li>
+                                <li><input type="radio" id="150Side" name="weight"><label
+                                        for="150Side">아트지150g/단면4도</label></li>
+                                <li><input type="radio" id="150BSide" name="weight"><label
+                                        for="150BSide">아트지150g/양면8도</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="moreInfo">
+                        <h4>상세정보입력</h4>
+                        <table>
+                            <tr>
+                                <td class="title">재단사이즈</td>
+                                <td class="wbox">
+                                    <span>가로</span>
+                                    <input type="text" id="width" name="pwsize" value="210">
+                                </td>
+                                <td class="hbox">
+                                    <span>세로</span>
+                                    <input type="text" id="height" name="phsize" value="297">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="title">작업사이즈</td>
+                                <td class="wbox">
+                                    <span>가로</span>
+                                    <input type="text" id="width3" name="pwsize" value="213">
+                                </td>
+                                <td class="hbox">
+                                    <span>세로</span>
+                                    <input type="text" id="height3" name="phsize" value="300">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="title">수량</td>
+                                <td>
+                                    <select id="quantity" class="select">
+                                        <option value="0">0.5연</option>
+                                    </select>
+                                    <!-- 1연시작 -->
+                                    <select id="quantity1" class="select">
+                                        <option value="1">1연</option>
+                                    </select>
+                                    <!-- 4연시작 -->
+                                    <select id="quantity2" class="select"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="title">건수</td>
+                                <td>
+                                    <select id="num" class="select">
+                                        <option value="1" selected>1건</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="title">후가공</td>
+                                <td colspan="3" class="postlist">
+                                    <a href="#">재단</a>
+                                    <a href="#">접지</a>
+                                    <a href="#">미싱</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="2" class="postpro1">
+                                    <p class="post_tit">재단</p>
+                                    <select id="cut" name="postprocss">
+                                        <option selected disabled>옵션선택</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="2" class="postpro2">
+                                    <p class="post_tit">접지</p>
+                                    <select id="fold" name="postprocss">
+                                        <option selected disabled>옵션선택</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="2" class="postpro3">
+                                    <p class="post_tit">미싱</p>
+                                    <select id="dotted" name="postprocss">
+                                        <option selected disabled>옵션선택</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="attention">
+                        <h4>주문시 주의사항</h4>
+                        <div class="att_txt">
+                            <p>후가공 접지 선택시</p>
+                            <p>- 인쇄물 사이즈가 <b>가로 182~594mm * 세로 257~840mm</b>안에 들어오는 인쇄물만 접지 가능합니다.</p>
+                            <p>후가공 미싱 선택시</p>
+                            <p>- 인쇄물 사이즈가 <b>가로 100~360mm * 세로 100~360mm</b>안에 들어오는 인쇄물만 미싱 가능합니다.</p>
+                            <p>비규격 사이즈 선택시</p>
+                            <p>- <b>가로 40~420mm * 세로 40~594mm</b>안에 들어오는 사이즈만 인쇄 가능합니다.(a2를 넘지 않는 사이즈)</p>
+                        </div>
+                        <div class="popup">
+                            <div class="box">
+                                <i class="fas fa-times mclose"></i>
+                                <p>비규격 사이즈</p>
+                                <p>
+                                    <가로 40~420mm><br>
+                                        <세로 40~594mm><br>
+                                </p>
+                                <p>범위에 해당하는 사이즈만<br>인쇄 가능합니다.<br>(a2를 넘지 않는 사이즈)</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="totalsum">
+                        <div class="priceT">
+                            <h4>인쇄금액</h4>
+                            <div>인쇄비 : <input type="hidden" id="unit" name="price"><label for="unit">원</label></div>
+                            <div>후가공 : <input type="hidden" id="post" name="price"><label for="post">0원</label></div>
+                        </div>
+                        <div class="sum">
+                            <h4>합계금액</h4>
+                            <div>인쇄금액 : <input type="hidden" id="totalprice" name="price"><label
+                                    for="totalprice">원</label></div>
+                            <div>부가세 : <input type="hidden" id="vat" name="price"><label for="vat">원</label></div>
+                            <div>결제금액 : <input type="hidden" id="totalvarprice" name="price"><label
+                                    for="totalvarprice">원</label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/ezSHW/printorder/leaflet1.js"></script>
+</body>
+
+</html>

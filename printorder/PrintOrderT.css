@@ -1,0 +1,44 @@
+@charset "uft-8";
+
+html{
+    font-size: 14px;
+}
+body{
+    min-width: 768px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.thin > div > ul > li{
+    height: 40px;
+    line-height: 20PX;
+    text-align: center;
+    position: relative;
+}
+.thin > div > ul > li > label{
+    position: relative;
+    top: -3px;
+}
+.moreInfo > table{
+    height: 400px;
+    line-height: 30px;
+}
+tr{
+    display: flex;
+    flex-direction: column;
+}
+.wbox{
+    width: 50%;
+    padding: 0 0 0 20px;
+}
+td{
+    line-height: 40px;
+}
+.hbox{
+    width: 50%;
+    position: absolute;
+    top: 40px;
+    right: 0;
+}

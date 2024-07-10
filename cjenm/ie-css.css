@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+.ie11 .ir_txt {
+    opacity: 1;
+    transform: translateY(-15%);
+}
+.ie11 .ir_sub {
+    left: 0;
+    flex-wrap: nowrap;
+}
+.ie11 .ir_txt .ir_h1 {
+    padding: 150px 0 30px 0;
+}
+.ie11 .word_txt {
+    padding: 150px 0;
+}
+.ie11 .sec4_word {
+    background: url(/ezSHW/cjenm/images/cjenm_words_bt-ie.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.ie11 .nav_bot {
+    display: table;
+}
+.ie11 .bg1 .contxt > span:nth-child(3)::before {
+    margin: 0 15px;
+}
+.ie11 .bg3 .contxt > span:nth-child(3)::before,
+.ie11 .bg3 .contxt > span:nth-child(4)::before,
+.ie11 .bg4 .contxt > span:nth-child(4)::before {
+    margin: 0 25px;
+}
+.ie11 .bg6 .contxt > span:nth-child(3)::before {
+    margin: 0 60px;
+}
+.ie11 .bg4 .contxt > span:nth-child(3)::before {
+    margin: 0 50px;
+}
+.ie11 .inner {
+    position: relative;
+}
+.ie11 .container .top {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    background: none;
+    height: 0;
+}
+.ie11 .top1 {
+    display: block;
+    width: 1903px;
+    height: 950px;
+}
+.ie11 .top1 img {
+    width: 100%;
+    position: relative;
+    z-index: -50;
+}
+.ie11 .arrow {
+    top: 960px;
+}

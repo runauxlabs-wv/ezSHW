@@ -1,0 +1,270 @@
+@charset "uft-8";
+
+html {
+    font-size: 12px;
+}
+body {
+    min-width: 320px;
+}
+.inner {
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #04045E;
+    display: none;
+}
+header.on {
+    display: block;
+    z-index: 2000;
+    background-color: #04045E;
+}
+header::before {
+    display: none;
+}
+header.on .inner {
+    display: flex;
+    flex-direction: column-reverse;
+}
+header.on .nav_top {
+    z-index: 2000;
+    position: absolute;
+    bottom: -10px;
+    padding: 56px;
+    height: 30%;
+    flex-direction: column;
+}
+header.on .nav_top > li > a {
+    height: 30px;
+    line-height: 30px;
+    font-size: 1rem;
+    margin: 0;
+}
+header.on .nav_top > li:last-child > a {
+    height: 30px;
+    line-height: 30px;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 50px;
+    right: -100px;
+}
+.fa-solid.fa-bars.mmenu {
+    display: flex;
+    color: #fff;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+}
+header.on .fas.fa-times.mclose {
+    display: flex;
+    color: #fff;
+    font-size: 1.875rem;
+    justify-content: flex-end;
+    padding: 30px;
+    height: 78px;
+}
+.nav_bot {
+    padding: 0;
+    height: 78px;
+    border-bottom: 1px solid #666;
+}
+header.on .nav_bot > a {
+    display: block;
+    width: 100%;
+    height: 78px;
+    margin: 0;
+}
+header.on .nav_bot a .logo {
+    height: 78px;
+    display: flex;
+    width: 42.5%;
+    background: url(/ezSHW/cjenm/images/cj_enm_logo.svg) no-repeat;
+    background-size: 60% 60%;
+    background-position: left center;
+    margin: 0 0 0 20px;
+}
+header.on .nav_bot .nav {
+    top: 80px;
+    display: unset;
+    height: 300px;
+    flex-direction: column;
+    padding: 20px 0 0 60px;
+    z-index: -1;
+    background: #04045E;
+    justify-content: space-around;
+    font: 800 1.75rem 'Nanum Gothic';
+    letter-spacing: -0.5px;
+}
+header.on .nav > li > a::after {
+    font-size: 1.5rem;
+    margin: 0 0 0 15px;
+}
+header.on .nav > li {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+header.on .nav > li > a {
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+}
+header.on .nav > li > ul {
+    position: relative;
+    flex-direction: column;
+    left: 0;
+    justify-content: space-between;
+    padding: 0;
+    align-items: flex-start;
+    text-align: left;
+    height: 100%;
+    background-color: transparent;
+}
+header.on .nav > li > ul > li {
+    width: 100%;
+    height: 25px;
+}
+header.on .nav > li > ul > li > a {
+    font-size: 1.125rem;
+    letter-spacing: -0.2px;
+    padding: 0 0 0 20px;
+    height: 25px;
+    line-height: 25px;
+}
+header.on .nav > li:nth-child(2) > ul,
+header.on .nav > li:last-child > ul {
+    flex-wrap: nowrap;
+    padding: 0;
+}
+header.on .snsicon {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+    z-index: 2200;
+    position: absolute;
+    bottom: 130px;
+    padding: 0 0 0 54px;
+}
+header.on .snsicon li {
+    width: 24px;
+    height: 100%;
+    margin-right: 15px;
+}
+header.on .snsicon li a {
+    display: flex;
+    justify-content: center;
+}
+
+.inner1440 {
+    width: 100%;
+    padding: 0 30px;
+}
+.box {
+    height: 90%;
+    margin: 50px 0 0 0;
+    justify-content: space-between;
+}
+.tab > h2 {
+    font: 2.5rem 'Russo One';
+    padding: 0;
+    display: block;
+    height: 10%;
+}
+.tab > ul {
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 10%;
+    padding: 0;
+    top: 40px;
+    justify-content: flex-start;
+}
+.tab > ul > li {
+    height: 25px;
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+.conbox {
+    height: 80%;
+    padding: 10% 0 0 0;
+}
+
+
+.channel {
+    flex-wrap: wrap;
+    height: 80px;
+}
+.channel .ch_box {
+    width: 49.2%;
+    height: 46%;
+}
+.txt_hover1, .txt_hover2, .txt_hover3, .txt_hover4 {
+    font: 400 1rem 'Nanum Gothic';
+    height: 30px;
+    padding: 10px 0;
+}
+.txt_hover3 > br,
+.txt_hover4 > br {
+    display: none;
+}
+.foot_box .foot_link {
+    flex-wrap: wrap;
+    font: 400 1rem 'Nanum Gothic';
+    letter-spacing: -0.8px;
+}
+.foot_link > li {
+    width: 50%;
+    height: 25px;
+}
+.foot_link > li > a {
+    height: 25px;
+    line-height: 25px;
+}
+.foot_link li a::after {
+    display: none;
+}
+.sitemap {
+    height: unset;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.sitemap .map {
+    width: 100%;
+    text-align: left;
+    border-right: none;
+    padding: 10px 0 0 10px;
+}
+.sitemap .map > li > ul > li:first-child {
+    padding: 0;
+}
+.snsicon {
+    position: absolute;
+    bottom: -120px;
+}
+.family_site {
+    left: 0;
+    margin: 30px 0 0 0;
+}
+.foot_add {
+    width: 100%;
+    top: 80px;
+}
+.foot_add .copyright {
+    letter-spacing: -0.2px;
+    margin: 15px 0 0 0;
+}
+.foot_add .company > span:first-child::after {
+    top: 4px;
+    margin: 0 8px;
+}
+.foot_add .address > span:last-child::before {
+    top: 42px;
+    margin-left: -7px;
+}

@@ -1,0 +1,481 @@
+@charset "utf-8";
+
+html {
+    font-size: 14px;
+}
+body {
+    min-width: 768px;
+}
+.inner {
+    width: 90%;
+    margin: 0 auto;
+}
+.wave {
+    background-position: center;
+}
+.ani1, .ani2, .ani3, .ani4, .ani5, .ani6 {
+    background-size: 80%;
+    background-position: 60% 10%;
+}
+
+header {
+    display: block;
+    position: relative;
+    max-width: 1024px;
+    height: 60px;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    background-color: #fff;
+}
+header.on {
+    display: none;
+}
+header .inner {
+    width: 100%;
+    height: 100%;
+}
+header .top {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+}
+header .inner .mlogo {
+    display: flex;
+    width: 240px;
+    height: 100%;
+    background: url(/ezSHW/binggrae/images/binggrae_logo.svg) 0% 50% no-repeat;
+    background-size: 40% 40%;
+    background-position: 20% center;
+}
+header .inner .mlogo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header .top {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(242, 242, 242);
+    display: none;
+    z-index: 210;
+    padding: 0;
+}
+header .top.on {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+header .top.on .logo {
+    width: 100%;
+    height: 60px;
+    background: url(/ezSHW/binggrae/images/binggrae_logo_w.svg) no-repeat rgb(255, 0, 0);
+    background-size: 50% 50%;
+    background-position: -25% center;
+    margin: 0 0 40px 0;
+    z-index: 50;
+}
+header .top.on .nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 30px;
+    height: 400px;
+    background-color: transparent;
+}
+header .top.on .nav div {
+
+    flex-direction: column;
+    width: 40%;
+}
+header .top.on .nav div > span {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+header .top.on .nav div > span:first-child {
+    border-top: 1px solid #ccc;
+}
+header .top.on .nav div > span a::after {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 1.375rem;
+    position: absolute;
+    left: 37%;
+    height: 80px;
+}
+header .top.on .nav div span > a {
+    display: block;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: left;
+    padding: 0 20px;
+    font-size: 1.5rem;
+}
+header .top.on .nav div span.on {
+    color: red;
+    border-bottom: 3px solid rgb(255, 0, 0);
+}
+header .top.on .nav .subnav {
+    display: flex;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    width: 60%;
+    padding: 0;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 10;
+    height: 400px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+header .top.on .nav .subnav > ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0;
+}
+header .top.on .nav .subnav > ul > li {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 100%;
+    padding: 0 50px;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+}
+header .top.on .nav .subnav > ul > li.on {
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+header .top.on .nav .subnav::before {
+    display: none;
+}
+header .top.on .nav .subnav > ul > li > ul > li {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    text-align: left;
+}
+header .top.on .nav .subnav > ul > li > ul > li > a {
+    font: 700 1.375rem 'Nanum Gothic';
+    width: 100%;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+header .top.on .nav_right {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 220px;
+    margin: 80px 0;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+header .top.on .nav_right a {
+    font: 400 1.375rem 'Nanum Gothic';
+}
+header .top.on .nav_under {
+    padding: 0;
+    background-color: #fff;
+}
+header .top.on .nav_under li {
+    width: 33.3%;
+    height: 80px;
+    border: 1px solid #ccc;
+}
+header .top.on .nav_under li > a {
+    display: block;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+header .top.on .nav_under li:nth-child(2) {
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+header .top.on .nav_under li:first-child {
+    border-left: 1px solid transparent;
+}
+header .top.on .nav_under li:last-child {
+    border-right: 1px solid transparent;
+}
+header .top.on .lang {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    padding: 0 20px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+header .top.on .lang a {
+    height: 80px;
+    line-height: 80px;
+    padding: 0;
+}
+.lang .select::after {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 1.375rem;
+    position: absolute;
+    right: 0;
+    height: 80px;
+}
+.fa-solid.fa-bars.mmenu {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 24px;
+}
+header .top.on .fas.fa-times.mclose {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 15px;
+    font-size: 2rem;
+    z-index: 220;
+    color: #fff;
+}
+.nav_right {
+    display: none;
+}
+.fa-solid.fa-bars {
+    font-size: 1.25rem;
+}
+.top {
+    width: 100%;
+    height: 100%;
+}
+.main_content {
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    justify-content: space-between;
+}
+.con {
+    display: block;
+    width: 70%;
+    height: 40%;
+    margin: 0 auto;
+    left: 5%;
+    top: 5%;
+}
+.con.bt4, .con.bt5, .con.bt6 {
+    top: 2%;
+}
+.con.bt1 {
+    background: url(/ezSHW/binggrae/images/prd1-t.png) no-repeat;
+    background-size: contain;
+}
+.con.bt2 {
+    background: url(/ezSHW/binggrae/images/prd2-t.png) no-repeat;
+    background-size: contain;
+}
+.con.bt3 {
+    background: url(/ezSHW/binggrae/images/prd3-t.png) no-repeat;
+    background-size: contain;
+}
+.con.bt4 {
+    background: url(/ezSHW/binggrae/images/prd4.png) no-repeat;
+    background-size: contain;
+}
+.con.bt5 {
+    background: url(/ezSHW/binggrae/images/prd5-t.png) no-repeat;
+    background-size: contain;
+}
+.con.bt6 {
+    background: url(/ezSHW/binggrae/images/prd6-t.png) no-repeat;
+    background-size: contain;
+}
+.main_text {
+    width: 80%;
+    height: 55%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+.main_text > p {
+    padding: 30px 0;
+}
+.swiper.mySwiper .swiper-pagination-bullet {
+    left: 0;
+    bottom: 0;
+}
+.swiper.mySwiper .swiper-pagination-bullet:nth-child(2),
+.swiper.mySwiper .swiper-pagination-bullet:nth-child(3) {
+    bottom: 0;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.top_nav {
+    display: none;
+}
+.section1 {
+    background: url(/ezSHW/binggrae/images/sec1_bt-t.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0;
+}
+.content1 {
+    display: flex;
+    flex-direction: column;
+    min-width: 768px;
+    height: 100%;
+}
+.social_left {
+    width: 100%;
+    height: 40%;
+    padding: 0;
+    top: 0;
+}
+.social_left .txt {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 0 20px 0;
+}
+.swiper.mySwiper3 {
+    width: 55%;
+    height: 60%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.swiper.mySwiper3 .swiper-button-next {
+    right: 25%;
+    top: 65%;
+}
+.swiper.mySwiper3 .swiper-button-prev {
+    left: 25%;
+    top: 65%;
+}
+.circle_box {
+    position: relative;
+    width: 245px;
+    height: 245px;
+    border-radius: 245px;
+}
+.circle_box > a {
+    height: 245px;
+}
+.cir_txt h2 {
+    padding: 130px 0 15px 0;
+}
+.circle_box .back {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 245px;
+    border-radius: 245px;
+}
+.cir_txt > button {
+    bottom: 15%;
+    width: 120px;
+    height: 30px;
+    border-radius: 30px;
+}
+.sns_right {
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    padding: 70px 0 0 0;
+}
+.sns_right .right_top {
+    height: 30%;
+}
+.right_top .top_text br {
+    display: none;
+}
+.right_top .top_text > p {
+    padding: 20px 0;
+}
+.right_top .top_text a {
+    margin: 0;
+}
+.icon_arrow {
+    background-position: left;
+}
+.video_box {
+    position: relative;
+    margin: 0 0 0 20px;
+    width: 60%;
+}
+video {
+    right: 0;
+    top: -10%;
+    max-width: 95%;
+}
+.right_bot {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 55%;
+    margin: 65px 0 0 0;
+}
+.right_bot > a {
+    width: 50%;
+    height: 45%;
+}
+.right_bot .box1,
+.box2,
+.box3,
+.box4 {
+    height: 100%;
+    margin: 0 auto;
+}
+.section2 {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0 0 0;
+}
+.content2 {
+    width: 90%;
+    height: 70%;
+    flex-direction: column;
+    padding: 30px 0 0 0;
+}
+.content2 .left_con2 {
+    width: 100%;
+    height: 100%;
+}
+.swiper.mySwiper2,
+.swiper.mySwiper2 .swiper-slide a {
+    margin: 0;
+    width: 100%;
+    height: 400px;
+}
+.swiper.mySwiper2 .swiper-slide .cf {
+    width: 100%;
+    height: 400px;
+}
+.page {
+    margin-bottom: 0;
+}
+.board_right {
+    width: 100%;
+    height: 250px;
+    flex-direction: row;
+    margin: 0 0 30px 0;
+}

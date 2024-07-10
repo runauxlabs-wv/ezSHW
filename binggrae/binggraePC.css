@@ -1,0 +1,1475 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 구글폰트 noto sans */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/* 나눔고딕 */
+@font-face {
+    font-family: 'Binggrae';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeRegular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeRegular.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeRegular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeRegular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeRegular.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Binggrae';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/binggrae/BinggraeBold.ttf') format("truetype");
+    font-display: swap;
+}
+/* 빙그레 폰트 */
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+/* 구글 아이콘 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+    word-wrap: break-word;
+    /* outline: 1px solid red; */
+}
+:root {
+    --swiper-theme-color: rgba(255, 0, 0, 0.5) !important;
+}
+html, body {
+    height: 100%;
+    background: url(/ezSHW/binggrae/images/sec2_patt.svg) 20% 50% repeat-y;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    max-width: 1920px;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header.on {
+    display: block;
+    transition: all 0.5s;
+    transition-delay: 3s;
+}
+.fa-solid.fa-bars,
+.fas.fa-times {
+    display: none;
+}
+header .inner .mlogo {
+    display: none;
+}
+/* nav */
+header .top {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 200;
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 2px 8px #999;
+    background-color: #fff;
+}
+header .logo {
+    width: 240px;
+    height: 30%;
+    background: url(/ezSHW/binggrae/images/binggrae_logo.svg) 0% 50% no-repeat;
+    background-size: contain;
+}
+header a {
+    color: #333;
+    font: 700 1.125rem 'Nanum Gothic';
+    letter-spacing: -1.2px;
+}
+.nav_right a {
+    color: #333;
+    font: 700 0.938rem 'Nanum Gothic';
+    letter-spacing: -0.075rem;
+}
+header .top .nav {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+}
+header .top .nav div {
+    display: flex;
+    flex-direction: row;
+}
+header .top .nav span {
+    width: 150px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+header .top .nav span > a {
+    display: block;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+}
+/* nav-sub메뉴 */
+.nav .subnav {
+    height: 0;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 1200px;
+    padding: 0 50px;
+}
+.nav .subnav > ul {
+    margin: 110px 0 0 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 600px;
+}
+.nav .subnav > ul > li {
+    width: 150px;
+}
+.nav .subnav > ul > li > ul > li {
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    text-align: center;
+}
+.nav .subnav > ul > li > ul > li > a {
+    color: #333;
+    font: 400 0.938rem 'Nanum Gothic';
+    letter-spacing: -0.075rem;
+}
+
+/* header hover */
+header .top .nav:hover {
+    background: #fff;
+    transition: all 0.3s;
+}
+header .top .nav span > a:hover {
+    color: red;
+    border-bottom: 3px solid rgb(255, 0, 0);
+}
+header .top .nav:hover .subnav {
+    height: 310px;
+    background-color: #fff;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 2px 8px #999;
+    transition: height 0.5s;
+}
+header .top .nav:hover .subnav::before {
+    content: "";
+    display: inline-block;
+    width: 1200px;
+    height: 1px;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    z-index: 100;
+    top: 99px;
+    left: 0;
+}
+header .top .nav:hover .subnav > ul {
+    position: relative;
+    z-index: 100;
+}
+.nav .subnav > ul > li > ul > li > a:hover {
+    color: red;
+    font-weight: 700;
+}
+.nav_right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    height: 60%;
+    justify-content: space-between;
+    margin: 0 0 0 20px;
+}
+.nav_right .lang {
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 75px;
+    background-color: #fff;
+}
+.lang a {
+    font: 700 0.875rem/1.7 'Nanum Gothic';
+    letter-spacing: -0.5px;
+    color: #666;
+    padding: 0 0 0 15px;
+}
+.lang .select {
+    position: relative;
+    display: block;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 0 0 15px;
+}
+.lang .select::after {
+    position: absolute;
+    right: 8px;
+    top: 1px;
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0 5px 0 5px;
+}
+.lang_wrap {
+    display: none;
+}
+.lang_wrap.langon {
+    display: block;
+    height: 85px;
+}
+.nav_under {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0 0 0;
+}
+
+/* 탑메인 */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.top {
+    width: 100%;
+}
+.shape {
+    position: absolute;
+    width: 100vw;
+    height: 1080px;
+    animation: motion 1.5s linear infinite alternate;
+    z-index: 2;
+}
+.ani1 {
+    background: url(/ezSHW/binggrae/images/top_shape_ani1.png) no-repeat;
+    background-size: 50%;
+    background-position: 30% 30%;
+}
+.ani2 {
+    background: url(/ezSHW/binggrae/images/top_shape_ani2.png) no-repeat;
+    background-size: 50%;
+    background-position: 30% 30%;
+}
+.ani3 {
+    background: url(/ezSHW/binggrae/images/top_shape_ani3.png) no-repeat;
+    background-size: 50%;
+    background-position: 30% 30%;
+}
+.ani4 {
+    background: url(/ezSHW/binggrae/images/top_shape_ani4.png) no-repeat;
+    background-size: 50%;
+    background-position: 30% 30%;
+}
+.ani5 {
+    background: url(/ezSHW/binggrae/images/top_shape_ani5.png) no-repeat;
+    background-size: 50%;
+    background-position: 30% 30%;
+}
+.ani6 {
+    background: url(/ezSHW/binggrae/images/top_shape_ani6.png) no-repeat;
+    background-size: 50%;
+    background-position: 30% 30%;
+}
+
+@keyframes motion {
+    0% {
+        margin-top: 0px;
+    }
+    /* 처음 위치 */
+    100% {
+        margin-top: 20px;
+    }
+    /* 마지막 위치 */
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    border-radius: 5px;
+    box-shadow: 0 2px 30px rgba(black, .2);
+    background: rgb(255, 240, 0);
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+.box.two {
+    background: rgb(0, 113, 214);
+}
+.mini_nav.two li a,
+.main_text.two > h1 {
+    color: rgb(0, 113, 214);
+}
+.main_text.two > button {
+    color: rgb(0, 113, 214);
+    border: 1px solid rgb(0, 113, 214);
+}
+.box.thr {
+    background: rgb(227, 43, 113);
+}
+.mini_nav.thr li a,
+.main_text.thr > h1 {
+    color: rgb(227, 43, 113);
+}
+.main_text.thr > button {
+    color: rgb(227, 43, 113);
+    border: 1px solid rgb(227, 43, 113);
+}
+.box.four {
+    background: rgb(115, 73, 36);
+}
+.mini_nav.four li a,
+.main_text.four > h1 {
+    color: rgb(115, 73, 36);
+}
+.main_text.four > button {
+    color: rgb(115, 73, 36);
+    border: 1px solid rgb(115, 73, 36);
+}
+.box.five {
+    background: rgb(245, 74, 16);
+}
+.mini_nav.five li a,
+.main_text.five > h1 {
+    color: rgb(245, 74, 16);
+}
+.main_text.five > button {
+    color: rgb(245, 74, 16);
+    border: 1px solid rgb(245, 74, 16);
+}
+.box.six {
+    background: rgb(187, 220, 0);
+}
+.mini_nav.six li a,
+.main_text.six > h1 {
+    color: rgb(105, 185, 5);
+}
+.main_text.six > button {
+    color: rgb(105, 185, 5);
+    border: 1px solid rgb(105, 185, 5);
+}
+.wave {
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    background: url(/ezSHW/binggrae/images/back_circle1.png) repeat;
+    background-position: right;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    animation: drift 15s infinite ease-in-out;
+}
+
+.wave.-three {
+    animation: drift 10s infinite ease-in-out;
+    transition: all 0.3s;
+}
+
+.wave.-two {
+    animation: drift 10s infinite ease-in-out;
+    transition: all 0.3s;
+    opacity: .1;
+}
+
+@keyframes drift {
+    0% {
+        margin-top: -40px;
+        margin-left: 0px;
+    }
+    50% {
+        margin-top: -180px;
+        margin-right: 120px;
+    }
+    100% {
+        margin-top: -80px;
+        margin-left: 0px;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1320px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.top_nav {
+    max-width: 1280px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+}
+
+.mini_nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0 0;
+}
+.mini_nav li {
+    width: 25%;
+}
+
+.mini_nav li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: rgb(239, 130, 0);
+    font: 700 1.125rem 'Binggrae';
+    letter-spacing: -0.075rem;
+}
+
+.top_nav .symbol {
+    padding: 0 0 0 50px;
+    height: 75px;
+}
+
+.top_nav .symbol a {
+    padding: 0 0 0 50px;
+    display: block;
+    height: 75px;
+    background: url(/ezSHW/binggrae/images/binggrae_symbol.svg) no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    z-index: 1;
+    margin: 10px 0 0 0;
+}
+
+.main_content {
+    position: relative;
+    display: flex;
+    height: 75%;
+}
+.con {
+    position: relative;
+    left: 3%;
+    top: 10%;
+    margin: 0 0 50px 120px;
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    transform: rotate(-10deg);
+}
+.con.bt1 {
+    background: url(/ezSHW/binggrae/images/prd1.png) no-repeat;
+    background-size: contain;
+}
+.con.bt2 {
+    background: url(/ezSHW/binggrae/images/prd2.png) no-repeat;
+    background-size: contain;
+}
+.con.bt3 {
+    background: url(/ezSHW/binggrae/images/prd3.png) no-repeat;
+    background-size: contain;
+}
+.con.bt4 {
+    background: url(/ezSHW/binggrae/images/prd4.png) no-repeat;
+    background-size: contain;
+}
+.con.bt5 {
+    background: url(/ezSHW/binggrae/images/prd5.png) no-repeat;
+    background-size: contain;
+}
+.con.bt6 {
+    background: url(/ezSHW/binggrae/images/prd6.png) no-repeat;
+    background-size: contain;
+}
+.main_text {
+    width: 55%;
+    margin: 100px 30px 0 0;
+}
+
+.main_text > h1 {
+    font: 700 4rem 'Binggrae';
+    letter-spacing: -0.25rem;
+    color: rgb(240, 130, 11);
+}
+
+.main_text > p {
+    font: 400 1.125rem/1.7em 'Binggrae';
+    letter-spacing: -0.106rem;
+    padding: 80px 0;
+    color: #555;
+}
+.main_text .txt_m {
+    display: none;
+}
+.main_text > button {
+    width: 185px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid rgb(240, 130, 11);
+    border-radius: 40px;
+    background: none;
+    font: 700 1.063rem 'Binggrae';
+    color: rgb(240, 130, 11);
+    cursor: pointer;
+}
+.fa-solid.fa-chevron-right {
+    margin: 0 0 0 10px;
+}
+.swiper.mySwiper {
+    overflow: hidden hidden;
+}
+.swiper.mySwiper .swiper-button-next,
+.swiper.mySwiper .swiper-button-prev {
+    display: none;
+}
+.swiper.mySwiper .swiper-pagination-bullet {
+    border-radius: 0;
+    width: 95px;
+    height: 136px;
+    position: relative;
+    bottom: -50px;
+    left: -15%;
+}
+.swiper.mySwiper .swiper-pagination {
+    position: relative;
+    height: 136px;
+    top: -14%;
+}
+.swiper.mySwiper .swiper-pagination-bullet:nth-child(2),
+.swiper.mySwiper .swiper-pagination-bullet:nth-child(3) {
+    bottom: -60px;
+}
+.swiper.mySwiper .swiper-pagination-bullet-active {
+    transform-origin: bottom;
+    animation: product 7s infinite linear;
+}
+@keyframes product {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: rotate(15deg);
+    }
+    20%, 40%, 60%, 80%, 100% {
+        transform: rotate(-15deg);
+    }
+}
+.swiper.mySwiper .swiper-pagination-bullet:first-child {
+    background: url(/ezSHW/binggrae/images/prd1.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.swiper.mySwiper .swiper-pagination-bullet:nth-child(2) {
+    background: url(/ezSHW/binggrae/images/prd2.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.swiper.mySwiper .swiper-pagination-bullet:nth-child(3) {
+    background: url(/ezSHW/binggrae/images/prd3.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.swiper.mySwiper .swiper-pagination-bullet:nth-child(4) {
+    background: url(/ezSHW/binggrae/images/prd4.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.swiper.mySwiper .swiper-pagination-bullet:nth-child(5) {
+    background: url(/ezSHW/binggrae/images/prd5.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.swiper.mySwiper .swiper-pagination-bullet:nth-child(6) {
+    background: url(/ezSHW/binggrae/images/prd6.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* 컨텐츠들 */
+.slick-dots {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+}
+.slick-dots > li {
+    list-style: none;
+    margin: 5px 0;
+}
+.slick-dots > li > button {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.5);
+    text-indent: -9999px;
+    outline: 0;
+}
+.slick-dots > li > button:hover {
+    background-color: #fff;
+}
+.slick-slide {
+    height: 100vh !important;
+}
+
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus {
+    outline: none;
+}
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after {
+    content: "";
+    display: table;
+}
+.slick-track:after {
+    clear: both;
+}
+.slick-loading {
+    visibility: hidden;
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir="rtl"] {
+    float: right;
+}
+img {
+    display: block;
+}
+.slick-loading img {
+    display: none;
+}
+.dragging img {
+    pointer-events: none;
+}
+.slick-initialized {
+    display: block;
+}
+.slick-loading {
+    visibility: hidden;
+}
+.slick-vertical {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.section1 {
+    background: url(/ezSHW/binggrae/images/sec1_bt.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 340px 0 0 0;
+    z-index: -1;
+}
+
+.section2 {
+    width: 100vw;
+    height: 100%;
+    padding: 220px 0 0 0;
+}
+
+.content1 {
+    position: relative;
+    max-width: 1440px;
+    height: 570px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content2 {
+    max-width: 1440px;
+    /* height: 530px; */
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 0 95px 0;
+    justify-content: space-around;
+}
+
+/* 섹션1-왼쪽 사회공헌 */
+.social_left {
+    width: 35%;
+    height: 70%;
+    padding: 0 0 30px 0;
+    position: relative;
+    top: -40px;
+}
+.social_left .txt {
+    position: relative;
+    width: 90%;
+    padding: 0 0 0 20px;
+}
+.social_left .txt > h1 {
+    font: 700 3.75rem 'Binggrae';
+    text-shadow: 4px 4px 2px rgb(255, 241, 0);
+    letter-spacing: -0.25rem;
+    color: rgb(255, 95, 0);
+    padding: 0 0 10px 0;
+}
+.social_left .txt > span {
+    font: 400 1.125rem 'Binggrae';
+    letter-spacing: -0.063rem;
+    color: rgb(255, 95, 0);
+}
+.swiper.mySwiper3 {
+    width: 75%;
+    box-sizing: border-box;
+    margin: 20px 0 0 35px;
+    overflow: hidden;
+}
+.swiper.mySwiper3 .swiper-button-next {
+    right: 15%;
+    top: 75%;
+}
+.swiper.mySwiper3 .swiper-button-prev {
+    left: 0;
+    top: 75%;
+}
+.swiper.mySwiper3 .swiper-pagination {
+    display: none;
+    margin-bottom: 40px;
+}
+
+.circle_box {
+    position: relative;
+    width: 90%;
+    height: 320px;
+    border-radius: 320px;
+}
+.circle_box .front,
+.circle_box .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 0.5s linear;
+}
+.circle_box .front {
+    z-index: 2;
+}
+.circle_box .back {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 320px;
+    border-radius: 320px;
+}
+.roY .back {
+    transform: rotateY(-180deg);
+}
+.roY:hover .front {
+    transform: rotateY(180deg);
+}
+.roY:hover .back {
+    transform: rotateY(0deg);
+}
+.circle_box > a {
+    display: block;
+    width: 100%;
+    height: 320px;
+    text-align: center;
+}
+.cir_txt h2 {
+    font: 700 1.75rem 'Binggrae';
+    letter-spacing: -0.125rem;
+    color: rgb(255, 95, 0);
+    padding: 150px 0 15px 0;
+    text-align: center;
+}
+.cir_txt p {
+    margin: 0 0 10px 0;
+    font: 400 1rem/1.2 'Binggrae';
+    letter-spacing: -0.063rem;
+    color: #666;
+    text-align: center;
+    padding: 0 30px;
+}
+.cir_txt > button {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid rgb(255, 95, 0);
+    border-radius: 40px;
+    background: none;
+    font: 700 1.063rem 'Binggrae';
+    color: rgb(255, 95, 0);
+}
+.icon1 {
+    height: 100%;
+    background: url(/ezSHW/binggrae/images/icon1_art_c.svg) no-repeat;
+    background-size: 35% 35%;
+    background-position: center 15%;
+}
+.icon2 {
+    height: 100%;
+    background: url(/ezSHW/binggrae/images/icon2_font_c.svg) no-repeat;
+    background-size: 35% 35%;
+    background-position: center 15%;
+}
+.icon3 {
+    height: 100%;
+    background: url(/ezSHW/binggrae/images/icon3_house_c.svg) no-repeat;
+    background-size: 35% 35%;
+    background-position: center 15%;
+}
+.icon4 {
+    height: 100%;
+    background: url(/ezSHW/binggrae/images/icon4_vol_c.svg) no-repeat;
+    background-size: 35% 35%;
+    background-position: center 15%;
+}
+.icon5 {
+    height: 100%;
+    background: url(/ezSHW/binggrae/images/icon5_kimkoo_c.svg) no-repeat;
+    background-size: 35% 35%;
+    background-position: center 15%;
+}
+.icon6 {
+    height: 100%;
+    background: url(/ezSHW/binggrae/images/icon6_song_c.svg) no-repeat;
+    background-size: 35% 35%;
+    background-position: center 15%;
+}
+
+/* 섹션1-오른쪽sns */
+.sns_right {
+    width: 60%;
+}
+.sns_right .right_top {
+    display: flex;
+    height: 50%;
+}
+.right_top .top_text {
+    width: 45%;
+    position: relative;
+}
+.right_top .top_text > h2 {
+    font: 700 3rem/1.1 'Binggrae';
+    letter-spacing: -0.25rem;
+    color: #fff;
+    /* padding: 30px 0 0 0; */
+}
+.right_top .top_text h2 > span {
+    font: 700 2rem 'Binggrae';
+    letter-spacing: -0.25rem;
+    color: #fff;
+}
+.right_top .top_text > p {
+    font: 400 1.1rem 'Binggrae';
+    letter-spacing: -0.063rem;
+    color: #fff;
+    padding: 32px 0 60px 0;
+}
+.right_top .top_text a {
+    position: relative;
+    color: rgb(255, 241, 0);
+    margin: 0 0 0 40px;
+    font: 700 1.25rem 'Binggrae';
+}
+.icon_arrow {
+    position: relative;
+    bottom: 15px;
+    background: url(/ezSHW/binggrae/images/youtube_arrow.svg) no-repeat;
+    background-position: 20% 50%;
+    height: 20px;
+    margin: 8px 0 0 0;
+}
+.video_box {
+    position: relative;
+    margin: 0 0 0 20px;
+    width: 60%;
+}
+video {
+    position: absolute;
+    right: -10%;
+    top: -55%;
+    z-index: 1;
+    border-radius: 30px;
+    max-width: 130%;
+    box-shadow: 15px -15px rgb(255, 241, 0);
+}
+.right_bot {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25%;
+    margin: 70px 0;
+}
+.right_bot .box1,
+.box2,
+.box3,
+.box4 {
+    position: relative;
+    width: 95%;
+    height: 90%;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.right_bot > a {
+    width: 25%;
+    height: 120%;
+    font: 700 0.875rem/1.1 'Binggrae';
+    letter-spacing: -0.5px;
+}
+.box1::before,
+.box2::before,
+.box3::before,
+.box4::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+.box1::before {
+    background: url(/ezSHW/binggrae/images/bing_insta.jpg) 50% 0% no-repeat;
+    background-size: cover;
+}
+.box2::before {
+    background: url(/ezSHW/binggrae/images/bingbann_youtu.jpg) 50% 40% no-repeat;
+    background-size: cover;
+}
+.box3::before {
+    background: url(/ezSHW/binggrae/images/bingice_insta.jpg) 50% 45% no-repeat;
+    background-size: cover;
+}
+.box4::before {
+    background: url(/ezSHW/binggrae/images/bingice_youtu.jpg) 50% 55% no-repeat;
+    background-size: cover;
+}
+.box1:hover::before,
+.box2:hover::before,
+.box3:hover::before,
+.box4:hover::before {
+    opacity: 0.2;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+.clip1, .clip3 {
+    background: url(/ezSHW/binggrae/images/insta_clip.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.8;
+    transform: translateY(35px);
+    transition: all 0.5s ease;
+}
+.clip2, .clip4 {
+    background: url(/ezSHW/binggrae/images/youtube_clip.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.8;
+    transform: translateY(35px);
+    transition: all 0.5s ease;
+    vertical-align: top;
+}
+.clip1.on, .clip2.on, .clip3.on, .clip4.on {
+    transform: translateY(0);
+}
+.clip1 .txt,
+.clip2 .txt,
+.clip3 .txt,
+.clip4 .txt {
+    width: 100%;
+    height: 35px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+.clip1 .txt::before,
+.clip3 .txt::before {
+    content: "\f16d";
+    font-family: "FontAwesome";
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 0 5px 0 0;
+    position: relative;
+    top: 3px;
+}
+.clip2 .txt::before,
+.clip4 .txt::before {
+    content: "\f167";
+    font-family: "FontAwesome";
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 0 5px 0 0;
+    position: relative;
+    top: 3px;
+}
+
+/* 섹션2-빙그레cf */
+.page {
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.page .swiper-button-prev.cus {
+    border: none;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    left: -10px;
+    z-index: 0;
+}
+.page .swiper-button-prev.cus::before {
+    content: "\f137";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.75rem;
+    color: rgba(255, 0, 0, 0.5);
+    text-align: center;
+}
+.page .swiper-button-next.cus {
+    border: none;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    z-index: 0;
+}
+.page .swiper-button-next,
+.page .swiper-button-prev {
+    background-image: none;
+}
+.page .swiper-button-next.cus::before {
+    content: "\f138";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.75rem;
+    color: rgba(255, 0, 0, 0.5);
+    text-align: center;
+}
+
+.swiper.mySwiper2 .swiper-slide a::before {
+    content: "\f144";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    font-size: 5rem;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    z-index: 1000;
+    color: #fff;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.content2 .left_con2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.swiper.mySwiper2,
+.swiper.mySwiper2 .swiper-slide a {
+    margin: 0;
+    width: 794px;
+    height: 450px;
+    overflow: hidden;
+}
+.swiper.mySwiper2 .swiper-slide .cf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 794px;
+    height: 450px;
+}
+.swiper.mySwiper2 .swiper-slide .cf > span {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 18px 0;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.6);
+    font: 700 1.5rem 'Nanum Gothic';
+    color: #fff;
+}
+.swiper-slide .cf.bt1 {
+    background: url(/ezSHW/binggrae/images/Yoplait_cf.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide .cf.bt2 {
+    background: url(/ezSHW/binggrae/images/acafela_cf.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide .cf.bt3 {
+    background: url(/ezSHW/binggrae/images/banana_cf.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide .cf.bt4 {
+    background: url(/ezSHW/binggrae/images/Melona_cf.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide .cf.bt5 {
+    background: url(/ezSHW/binggrae/images/together_cf.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide .cf.bt6 {
+    background: url(/ezSHW/binggrae/images/crabchips_cf.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide .cf.bt7 {
+    background: url(/ezSHW/binggrae/images/supercon_cf.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide .cf.bt8 {
+    background: url(/ezSHW/binggrae/images/cledor_cf.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 섹션2-게시판-공지&보도자료 */
+.board_right {
+    width: 500px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 0 0 50px;
+    align-content: flex-end;
+}
+
+.board_right a {
+    height: 35%;
+    color: rgb(181, 181, 181);
+    font: 400 1.125rem 'Nanum Gothic';
+    letter-spacing: -1px;
+}
+
+.board_right .board {
+    display: flex;
+    justify-content: space-between;
+}
+
+.board .circle_news {
+    width: 120px;
+    height: 120px;
+    margin: 10px 10px;
+    line-height: 120px;
+    text-align: center;
+    background: url(/ezSHW/binggrae/images/icon_news.svg) 50% 50% no-repeat;
+    text-indent: -9999px;
+}
+
+.board .txtbox {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.board .txtbox > span:first-child {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-height: 1.3em;
+    max-height: 5.2em;
+    margin: 20px 0 0 0;
+}
+
+.board .txtbox > span:last-child {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.board .circle_notice {
+    width: 120px;
+    height: 120px;
+    margin: 10px 20px;
+    line-height: 120px;
+    text-align: center;
+    background: url(/ezSHW/binggrae/images/icon_notice.svg) 50% 50% no-repeat;
+    text-indent: -9999px;
+}
+
+/* 푸터 */
+footer {
+    position: relative;
+    bottom: 0;
+    height: 30%;
+    background-color: #f6f6f6;
+}
+
+.foot_top {
+    padding: 37px 10px 26px 10px;
+    border-bottom: 1px solid #e3e3e3;
+    position: relative;
+}
+
+.foot_link {
+    display: flex;
+}
+
+.foot_link li a {
+    font: 700 0.875rem 'Nanum Gothic';
+    letter-spacing: -1.2px;
+    color: #666;
+}
+
+.foot_link li:first-child a::after {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #666;
+    margin: 0 10px;
+}
+
+.sel_box {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    border-radius: 20px;
+    border: 1px solid #666;
+    width: 270px;
+    background-color: #fff;
+}
+
+.sel_box .selected > span {
+    font: 800 1rem 'Nanum Gothic';
+    color: #666;
+}
+
+.sel_box a {
+    font: 400 1rem/1.8 'Nanum Gothic';
+    color: #666;
+    padding: 0 0 0 30px;
+}
+
+.sel_box .selected {
+    position: relative;
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 0 0 20px;
+}
+
+.onoff {
+    display: none;
+}
+
+.onoff.on {
+    display: block;
+    height: 150px;
+}
+
+.selected::after {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    content: "";
+    width: 20px;
+    height: 15px;
+    background: url(/ezSHW/binggrae/images/arrow_drop.svg) no-repeat;
+    background-size: cover;
+}
+
+.address .custom {
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.cs_center {
+    font: 400 0.875rem 'Nanum Gothic';
+    letter-spacing: -1.2px;
+    color: #666;
+}
+
+.cs_txt {
+    font: 700 0.875rem 'Nanum Gothic';
+    letter-spacing: -1.2px;
+    color: #000;
+    border: 1px solid #666;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.address p {
+    font: 400 0.875rem 'Nanum Gothic';
+    color: #666;
+}
+
+.foot_bot {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 40px 0;
+}
+
+.foot_bot .logo_eng {
+    width: 155px;
+    height: 32px;
+    background: url(/ezSHW/binggrae/images/footer_logo.png) no-repeat;
+}
+
+.foot_bot .copyright {
+    display: flex;
+    align-items: center;
+    flex: 1 1 70%;
+    padding-left: 40px;
+    font: 400 1rem 'Nanum Gothic';
+    letter-spacing: 0.5px;
+    color: #666;
+}
+
+.foot_bot .snsicon {
+    display: flex;
+}
+
+.foot_bot .icon_insta {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(/ezSHW/binggrae/images/footer_instar.png) no-repeat;
+    margin-left: 15px;
+}
+
+.foot_bot .icon_youtube {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(/ezSHW/binggrae/images/footer_youtube.png) no-repeat;
+    margin-left: 15px;
+}
+
+.foot_bot .icon_kica {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(/ezSHW/binggrae/images/footer_certificate.png) no-repeat;
+    margin-left: 15px;
+}

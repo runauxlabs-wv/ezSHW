@@ -1,0 +1,503 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 구글폰트 noto sans */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/* 나눔고딕 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+/* 나눔고딕코딩 */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+/* 'Russo One', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+    word-wrap: break-word;
+    /* outline: 1px solid red; */
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    position: relative;
+    background-color: #00003C;
+    height: 110px;
+}
+header .inner {
+    max-width: 1920px;
+}
+header::before {
+    content: "";
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.fa-solid.fa-bars,
+.fas.fa-times {
+    display: none;
+}
+header .inner .mlogo {
+    display: none;
+}
+header .snsicon {
+    display: none;
+}
+.nav_top {
+    position: relative;
+    padding: 10px 0 0 0;
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-end;
+    max-width: 1200px;
+    height: 30%;
+    font: 700 0.75rem 'Nanum Gothic';
+    letter-spacing: -0.2px;
+}
+.nav_top li a {
+    display: block;
+    margin: 0 20px;
+}
+.nav_top li a::after {
+    content: "\f35d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0 0 0 5px;
+}
+.nav_top li:last-child a::before {
+    content: "\f0ac";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0 5px 0 5px;
+}
+.nav_top li:last-child a::after {
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0 5px 0 5px;
+}
+.lang_wrap {
+    display: none;
+    position: absolute;
+    right: 20px;
+    background-color: #04045E;
+    width: 80px;
+    padding: 10px 0;
+    margin: 9px 0 0 0;
+    font: 400 0.75rem/2 'Nanum Gothic';
+    color: #fff;
+}
+.lang_wrap li a::before,
+.lang_wrap li a::after {
+    display: none;
+}
+.lang_wrap.on {
+    display: block;
+}
+.lang_wrap li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.nav_bot {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    height: 85px;
+    justify-content: space-between;
+    padding: 15px 0 0 0;
+    position: relative;
+    z-index: 1000;
+}
+.nav_bot > a {
+    display: block;
+    width: 130px;
+    height: 60px;
+    margin: 5px 5% 0 12%;
+}
+.nav_bot a .logo {
+    position: absolute;
+    width: 130px;
+    height: 60px;
+    background: url(/ezSHW/cjenm/images/cj_enm_logo.svg) 50% 10% no-repeat;
+    background-size: contain;
+
+}
+.nav {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 85px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 27%;
+    font: 800 1.25rem 'Nanum Gothic';
+    letter-spacing: -0.5px;
+}
+.nav > li > a::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0 0 0 8px;
+}
+.nav > li > a {
+    display: block;
+    width: 120px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 40px 0 0;
+}
+.nav > li > a:hover,
+.nav > li > ul > li > a:hover {
+    color: #FF9700;
+}
+.nav > li {
+    width: 120px;
+    text-align: center;
+    margin-top: -70px;
+}
+.nav > li > ul {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 55% 0 30.5%;
+    text-align: center;
+    background-color: rgba(13, 22, 51, 0.9);
+}
+.nav > li:first-child > ul {
+    justify-content: space-between;
+    padding: 0 30% 0 30%;
+}
+.nav > li:nth-child(2) > ul,
+.nav > li:last-child > ul {
+    justify-content: space-between;
+    padding: 0 5% 0 30.5%;
+}
+.nav > li > ul > li > a {
+    width: 100%;
+    font: 700 1rem 'Nanum Gothic';
+    letter-spacing: 0.2px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    background-color: #00003C;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.inner1440 {
+    width: 1440px;
+    margin: 0 auto;
+}
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.tab > h2 {
+    font: 3rem 'Russo One';
+    letter-spacing: -1.5px;
+    color: #fff;
+    padding: 20px 0;
+}
+.tab > ul {
+    width: 100%;
+    height: 57px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px 20px 0;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+}
+.tab > ul > li {
+    height: 57px;
+    line-height: 57px;
+    padding: 20px 10px;
+    margin: 0 5px 0 0;
+    font: 800 1rem 'Nanum Gothic';
+    position: relative;
+}
+.tab .conbox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.tab .conbox.on {
+    display: block;
+    position: relative;
+}
+.conbox > h2 {
+    color: #fff;
+    text-align: center;
+    height: 500px;
+    line-height: 500px;
+    font-family: 'Nanum Gothic Coding';
+}
+
+/* footer */
+footer {
+    display: flex;
+    background-color: #00003C;
+    color: #fff;
+    height: 960px;
+}
+footer .inner {
+    width: 1440px;
+    padding: 0 30px;
+}
+.channel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    margin: 20px 0;
+}
+.channel .ch_box {
+    width: 24%;
+    height: 110px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    position: relative;
+}
+.ch_box.tving:hover, .ch_box.mnet:hover, .ch_box.ocn:hover, .ch_box.toon:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.txt_hover1, .txt_hover2, .txt_hover3, .txt_hover4 {
+    display: none;
+    font: 700 1rem 'Nanum Gothic';
+    letter-spacing: -0.8px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 110px;
+    line-height: 110px;
+}
+.txt_hover3 > br,
+.txt_hover4 > br {
+    display: none;
+}
+.txt_hover1.on, .txt_hover2.on, .txt_hover3.on, .txt_hover4.on {
+    display: block;
+}
+.ch_box.tving:hover .tvn_logo,
+.ch_box.mnet:hover .mnet_logo,
+.ch_box.ocn:hover .ocn_logo,
+.ch_box.toon:hover .toon_logo {
+    opacity: 0.3;
+}
+.tvn_logo {
+    background: url(/ezSHW/cjenm/images/tvn_logo.svg) no-repeat;
+    background-size: 50% 50%;
+    height: 100%;
+    background-position: center;
+}
+.mnet_logo {
+    background: url(/ezSHW/cjenm/images/mnet_logo.svg) no-repeat;
+    background-size: 55% 55%;
+    height: 100%;
+    background-position: center;
+}
+.ocn_logo {
+    background: url(/ezSHW/cjenm/images/ocn_logo.svg) no-repeat;
+    background-size: 50% 50%;
+    height: 100%;
+    background-position: center;
+}
+.toon_logo {
+    background: url(/ezSHW/cjenm/images/tooniverse_logo.svg) no-repeat;
+    background-size: 80% 80%;
+    height: 100%;
+    background-position: center;
+}
+.sitemap {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.sitemap .map {
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 30px 0 0 0;
+}
+.sitemap .map > h2 {
+    font: 700 1.5rem 'Nanum Gothic';
+    letter-spacing: -1px;
+    padding: 0 0 30px 0;
+}
+.sitemap .map > li > ul > li:first-child {
+    padding: 30px 0 0 0;
+}
+.sitemap .map li a {
+    font: 400 1rem/2 'Nanum Gothic';
+    letter-spacing: -0.8px;
+    padding: 30px 0 30px 0;
+}
+.sitemap .map > ul > li:hover a {
+    color: #FF9700;
+    font: 700 1rem/2 'Nanum Gothic';
+}
+.map:last-child {
+    border-right: none;
+}
+.sitemap .map:last-child > li > a > h2::after {
+    content: "\f35d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 0 0 10px;
+}
+.foot_box {
+    height: 25%;
+    margin: 30px 0 0 0;
+    position: relative;
+}
+.foot_box .foot_link {
+    display: flex;
+    font: 400 0.875rem 'Nanum Gothic';
+    letter-spacing: -1px;
+}
+.foot_link li a::after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+.snsicon {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+.snsicon li {
+    width: 24px;
+    height: 100%;
+    margin-right: 15px;
+}
+.snsicon li a {
+    display: flex;
+    justify-content: center;
+}
+.fa-brands.fa-youtube,
+.fa-brands.fa-facebook,
+.fa-brands.fa-instagram {
+    font-size: 20px;
+}
+.family_site {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    margin: 10px 0 0 0;
+    right: 0;
+}
+.family_site .site_open {
+    width: 150px;
+    position: absolute;
+    right: 0;
+    font: 800 1.25rem 'Nanum Gothic';
+}
+.fa-solid.fa-plus {
+    font-size: 1.25rem;
+    margin-left: 10px;
+}
+.family_wrap {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    z-index: 40;
+    background-color: #04045E;
+    width: 240px;
+    height: 350px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.family_wrap.on {
+    display: block;
+}
+.family_wrap dd:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.family_wrap dl {
+    margin: 15px 0;
+}
+.family_wrap dl > dt {
+    font: 800 1rem/1.2 'Nanum Gothic';
+    padding: 5px 0 5px 20px;
+}
+.family_wrap dl > dd {
+    font: 400 0.75rem/1.5 'Nanum Gothic';
+    margin-top: 5px;
+    padding: 5px 0 5px 20px;
+}
+.family_wrap::-webkit-scrollbar {
+    width: 8px;
+}
+.family_wrap::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.foot_add {
+    position: relative;
+    width: 50%;
+    font: 400 0.875rem/1.8 'Nanum Gothic';
+    letter-spacing: -0.8px;
+}
+.foot_add .company > span:last-child {
+    margin: 0 15px;
+}
+.foot_add .company > span:first-child::after {
+    content: "";
+    width: 1px;
+    height: 12px;
+    position: absolute;
+    top: 7px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+.foot_add .address > span:last-child {
+    margin: 0 15px;
+}
+.foot_add .address > span:last-child::before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    position: absolute;
+    top: 57px;
+    background-color: #fff;
+    display: inline-block;
+    margin-left: -7px;
+}
+.foot_add .copyright {
+    margin: 30px 0 0 0;
+}

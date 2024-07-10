@@ -1,0 +1,740 @@
+{
+    "paperInfo" : [
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "A4(국8절)",
+                "id" : "a4size",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 40000
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 50000
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/단면4도",
+                        "id" : "150Side",
+                        "money" : {
+                            "id" : "unitS15",
+                            "price" : 80000
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/양면8도",
+                        "id" : "150BSide",
+                        "money" : {
+                            "id" : "unitBS15",
+                            "price" : 90000
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 210,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 297,
+                    "id" : "height"
+                }
+            }
+        },
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "A5(국16절)",
+                "id" : "a5size",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 40000
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 50000
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/단면4도",
+                        "id" : "150Side",
+                        "money" : {
+                            "id" : "unitS15",
+                            "price" : 80000
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/양면8도",
+                        "id" : "150BSide",
+                        "money" : {
+                            "id" : "unitBS15",
+                            "price" : 90000
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 147,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 210,
+                    "id" : "height"
+                }
+            }
+        },
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "A3(국4절)",
+                "id" : "a3size",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 75000
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 95000
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/단면4도",
+                        "id" : "150Side",
+                        "money" : {
+                            "id" : "unitS15",
+                            "price" : 110000
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/양면8도",
+                        "id" : "150BSide",
+                        "money" : {
+                            "id" : "unitBS15",
+                            "price" : 122000
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 297,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 420,
+                    "id" : "height"
+                }
+            }
+        },
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "A2(국2절)",
+                "id" : "a2size",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 156000
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 200000
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 420,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 594,
+                    "id" : "height"
+                }
+            }
+        },
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "16절",
+                "id" : "b16size",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 52000
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 65000
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/단면4도",
+                        "id" : "150Side",
+                        "money" : {
+                            "id" : "unitS15",
+                            "price" : 110000
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/양면8도",
+                        "id" : "150BSide",
+                        "money" : {
+                            "id" : "unitBS15",
+                            "price" : 157000
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 182,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 257,
+                    "id" : "height"
+                }
+            }
+        },
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "8절",
+                "id" : "b8size",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 92000
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 115000
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/단면4도",
+                        "id" : "150Side",
+                        "money" : {
+                            "id" : "unitS15",
+                            "price" : 128000
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/양면8도",
+                        "id" : "150BSide",
+                        "money" : {
+                            "id" : "unitBS15",
+                            "price" : 157000
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 257,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 367,
+                    "id" : "height"
+                }
+            }
+        },
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "4절",
+                "id" : "b4size",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 204000
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 244000
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 367,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 517,
+                    "id" : "height"
+                }
+            }
+        },
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "32절",
+                "id" : "b32size",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 52000
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 65000
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/단면4도",
+                        "id" : "150Side",
+                        "money" : {
+                            "id" : "unitS15",
+                            "price" : 110000
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/양면8도",
+                        "id" : "150BSide",
+                        "money" : {
+                            "id" : "unitBS15",
+                            "price" : 157000
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 127,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 182,
+                    "id" : "height"
+                }
+            }
+        },
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "64절",
+                "id" : "b64size",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 55000
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 68000
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 89.5,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 127,
+                    "id" : "height"
+                }
+            }
+        },
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "24절",
+                "id" : "b24size",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 102000
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 125000
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 120,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 257,
+                    "id" : "height"
+                }
+            }
+        },
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "48절",
+                "id" : "b48size",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 55000
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 68000
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 83.5,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 182,
+                    "id" : "height"
+                }
+            }
+        },
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "장16절",
+                "id" : "jang16size",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 92000
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 115000
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 127,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 367,
+                    "id" : "height"
+                }
+            }
+        },
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "장32절",
+                "id" : "jang32size",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 55000
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 68000
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 89.5,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 257,
+                    "id" : "height"
+                }
+            }
+        },
+        {
+            "kind" : "합판전단",
+            "size" : {
+                "name" : "비규격",
+                "id" : "nonst",
+                "weight" : [
+                    {
+                        "list" : "아트지100g/단면4도",
+                        "id" : "100Side",
+                        "money" : {
+                            "id" : "unitS10",
+                            "price" : 0
+                        }
+                    },
+                    {
+                        "list" : "아트지100g/양면8도",
+                        "id" : "100BSide",
+                        "money" : {
+                            "id" : "unitBS10",
+                            "price" : 0
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/단면4도",
+                        "id" : "150Side",
+                        "money" : {
+                            "id" : "unitS15",
+                            "price" : 0
+                        }
+                    },
+                    {
+                        "list" : "아트지150g/양면8도",
+                        "id" : "150BSide",
+                        "money" : {
+                            "id" : "unitBS15",
+                            "price" : 0
+                        }
+                    }
+                ],
+                "valueX" : {
+                    "wsize" : 182,
+                    "id" : "width"
+                },
+                "valueY" : {
+                    "hsize" : 257,
+                    "id" : "height"
+                }
+            }
+        }
+    ],
+    "postprocss" : [
+        {
+            "post" : {
+                "name" : "재단",
+                "id" : "cut",
+                "cutlist" : [
+                    {
+                        "cutListT" : "2등분재단",
+                        "id" : "dividecut",
+                        "money" : {
+                            "id" : "cut2price",
+                            "price" : 2500
+                        }
+                    },
+                    {
+                        "cutListT" : "3등분재단",
+                        "id" : "divide3cut",
+                        "money" : {
+                            "id" : "cut3price",
+                            "price" : 5000
+                        }
+                    },
+                    {
+                        "cutListT" : "4등분재단",
+                        "id" : "divide4cut",
+                        "money" : {
+                            "id" : "cut4price",
+                            "price" : 10000
+                        }
+                    },
+                    {
+                        "cutListT" : "5등분재단",
+                        "id" : "divide5cut",
+                        "money" : {
+                            "id" : "cut5price",
+                            "price" : 10000
+                        }
+                    },
+                    {
+                        "cutListT" : "6등분재단",
+                        "id" : "divide6cut",
+                        "money" : {
+                            "id" : "cut6price",
+                            "price" : 15000
+                        }
+                    },
+                    {
+                        "cutListT" : "7등분이상재단",
+                        "id" : "divide7cut",
+                        "money" : {
+                            "id" : "cut7price",
+                            "price" : 20000
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "post" : {
+                "name" : "접지",
+                "id" : "fold",
+                "foldlist" : [
+                    {
+                        "foldListT" : "2단접지",
+                        "id" : "twofold",
+                        "money" : {
+                            "id" : "fold2price",
+                            "price" : 15000
+                        }
+                    },
+                    {
+                        "foldListT" : "3단접지",
+                        "id" : "thrfold",
+                        "money" : {
+                            "id" : "fold3price",
+                            "price" : 15000
+                        }
+                    },
+                    {
+                        "foldListT" : "4단접지",
+                        "id" : "fourfold",
+                        "money" : {
+                            "id" : "fold4price",
+                            "price" : 20000
+                        }
+                    },
+                    {
+                        "foldListT" : "Z접지",
+                        "id" : "Zfold",
+                        "money" : {
+                            "id" : "foldZprice",
+                            "price" : 15000
+                        }
+                    },
+                    {
+                        "foldListT" : "N접지",
+                        "id" : "Nfold",
+                        "money" : {
+                            "id" : "foldNprice",
+                            "price" : 15000
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "post" : {
+                "name" : "미싱",
+                "id" : "dotted",
+                "dotlist" : [
+                    {
+                        "dotListT" : "1줄가로",
+                        "id" : "dot1w",
+                        "money" : {
+                            "id" : "dot1wprice",
+                            "price" : 20000
+                        }
+                    },
+                    {
+                        "dotListT" : "1줄세로",
+                        "id" : "dot1h",
+                        "money" : {
+                            "id" : "dot1hprice",
+                            "price" : 20000
+                        }
+                    },
+                    {
+                        "dotListT" : "2줄가로",
+                        "id" : "dot2w",
+                        "money" : {
+                            "id" : "dot2wprice",
+                            "price" : 20000
+                        }
+                    },
+                    {
+                        "dotListT" : "2줄세로",
+                        "id" : "dot2h",
+                        "money" : {
+                            "id" : "dot2hprice",
+                            "price" : 20000
+                        }
+                    },
+                    {
+                        "dotListT" : "3줄가로",
+                        "id" : "dot3w",
+                        "money" : {
+                            "id" : "dot3wprice",
+                            "price" : 45000
+                        }
+                    },
+                    {
+                        "dotListT" : "3줄세로",
+                        "id" : "dot3h",
+                        "money" : {
+                            "id" : "dot3hprice",
+                            "price" : 45000
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

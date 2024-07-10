@@ -1,0 +1,109 @@
+@charset "uft-8";
+
+html{
+    font-size: 14px;
+}
+body{
+    min-width: 768px;
+}
+.inner1440{
+    width: 90%;
+    margin: 0 auto;
+}
+header .inner{
+    width: 100%;
+}
+.nav{
+    padding-left: 51%;
+}
+.nav > li > ul{
+    padding: 0 40% 0 33%;
+}
+.nav > li:first-child > ul{
+    padding: 0 10% 0 33%;
+}
+.nav > li:nth-child(2) > ul,
+.nav > li:last-child > ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 30px;
+    padding: 15px 12% 15px 33%;
+}
+.nav > li > ul > li{
+    height: 30px;
+}
+
+
+.tab > ul{
+    width: 100%;
+    height: 90px;
+    flex-wrap: wrap;
+    padding: 20px 0 20px 40%;
+    top: -5px;
+}
+
+.tab > ul > li{
+    height: 30px;
+    padding: 15px 0;
+    margin: 0 10px 0 0;
+}
+.tab > ul > li > a{
+    height: 30px;
+    display: block;
+}
+.bottom_txt{
+    margin: 0 0 20px 0;
+}
+.title_txt{
+    width: 600px;
+}
+.title_txt.double > h2{
+    padding: 55px 10px;
+}
+.bottom_txt > p{
+    padding: 30px 0 0 0;
+}
+.subpic > p{
+    height: 100%;
+}
+.listbox, .listbox1 .listbox2, .listbox3{
+    width: 95%;
+    height: 250px;
+    margin: 0 auto;
+}
+.listbox img, .listbox1 img, .listbox2 img, .listbox3 img{
+    width: 130px;
+}
+.listbox .slick-track,
+.listbox1 .slick-track,
+.listbox2 .slick-track,
+.listbox3 .slick-track{
+    height: 250px;
+    padding: 32px 0;    
+}
+
+footer{
+    height: 760px;
+}
+.channel .ch_box{
+    width: 24%;
+    height: 80px;
+    border: 1px solid rgba(255,255,255,1);
+    position: relative;
+}
+.txt_hover1, .txt_hover2, .txt_hover3, .txt_hover4{
+    font: 400 1rem 'Nanum Gothic';
+    height: 80px;
+    letter-spacing: -0.2px;
+    padding: 25px 0;
+}
+.txt_hover3 > br,
+.txt_hover4 > br{
+    display: block;
+}
+.sitemap{
+    height: 40%;
+}
+.foot_add .address > span:last-child::before{
+    top: 50px;
+}

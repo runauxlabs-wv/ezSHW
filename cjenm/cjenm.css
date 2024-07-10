@@ -1,0 +1,627 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 구글폰트 noto sans */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/* 나눔고딕 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+/* 나눔고딕코딩 */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+/* 'Russo One', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+    word-wrap: break-word;
+    /* outline: 1px solid red; */
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    position: relative;
+    background-color: #00003C;
+    height: 110px;
+}
+header::before {
+    content: "";
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.nav_top {
+    position: relative;
+    padding: 10px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 1200px;
+    height: 30%;
+    font: 700 0.75rem 'Nanum Gothic';
+    letter-spacing: -0.2px;
+}
+.nav_top li a {
+    display: block;
+    margin: 0 20px;
+}
+.nav_top li a::after {
+    content: "\f35d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0 0 0 5px;
+}
+.nav_top li:last-child a::before {
+    content: "\f0ac";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0 5px 0 5px;
+}
+.nav_top li:last-child a::after {
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0 5px 0 5px;
+}
+.lang_wrap {
+    display: none;
+    position: absolute;
+    right: 20px;
+    background-color: #04045E;
+    ;
+    width: 80px;
+    padding: 10px 0;
+    margin: 9px 0 0 0;
+    font: 400 0.75rem/2 'Nanum Gothic';
+    color: #fff;
+}
+.lang_wrap li a::before,
+.lang_wrap li a::after {
+    display: none;
+}
+.lang_wrap.on {
+    display: block;
+}
+.lang_wrap li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.nav_bot {
+    display: flex;
+    height: 70%;
+    padding: 15px 0 0 0;
+}
+.nav_bot .logo {
+    width: 130px;
+    height: 60px;
+    background: url(/ezSHW/cjenm/images/cj_enm_logo.svg) 50% 50% no-repeat;
+    background-size: contain;
+    align-items: center;
+    margin: 0 40px 0 0;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    font: 800 1.25rem 'Nanum Gothic';
+    letter-spacing: -0.5px;
+}
+.nav li a::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0 0 0 8px;
+}
+.nav li:nth-child(3) a::after {
+    display: none;
+}
+.nav li a {
+    display: block;
+    margin: 0 40px 0 0;
+}
+.container {
+    height: 100%;
+}
+.container .top {
+    display: flex;
+    width: 100%;
+    height: 960px;
+    position: relative;
+}
+.container .top::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(/ezSHW/cjenm/images/top-background.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+.top_txt {
+    padding: 250px 0 0 0;
+    height: 90%;
+    text-align: center;
+
+}
+.sub_h2 {
+    font: 4rem 'Russo One';
+    letter-spacing: -1.5px;
+    text-shadow: 4px 4px 1px #fff;
+}
+.main_h1 {
+    font: 8rem 'Russo One';
+    letter-spacing: -3px;
+    color: #FFAA06;
+    text-shadow: 8px 8px 2px #fff;
+}
+.dia_icon {
+    width: 100px;
+    height: 100px;
+    background: url(/ezSHW/cjenm/images/diamond_fff.svg) no-repeat;
+    margin: 80px auto;
+    position: relative;
+    left: 3px;
+    top: 3px;
+}
+.dia_icon::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: url(/ezSHW/cjenm/images/diamond_org.svg) no-repeat;
+    position: absolute;
+    z-index: 0;
+    top: -4px;
+    left: -4px;
+}
+.top_txt > span {
+    font: 700 1.8rem/1.3 'Nanum Gothic';
+    letter-spacing: -1px;
+    color: #333;
+}
+.arrow {
+    height: 10%;
+    background: url(/ezSHW/cjenm/images/arrow.svg) 50% 50% no-repeat;
+    background-size: 30% 30%;
+}
+.sec1_infor {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-color: #00003C;
+    color: #fff;
+}
+.left_liveir, .right_news {
+    width: 32%;
+    height: 100%;
+    padding: 10px 20px;
+}
+.right_news {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.news_sub {
+    width: 95%;
+    height: 70%;
+    display: flex;
+    margin: 10px 0 0 0;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.news_sub > span:first-child, .right_news > h3 {
+    width: 75%;
+}
+.pre_arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50%;
+    width: 45px;
+    background: url(/ezSHW/cjenm/images/arrow_w.svg) no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
+    transform: rotate(180deg);
+    border: 1px solid #666;
+    border-bottom: 0;
+}
+.next_arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 45px;
+    background: url(/ezSHW/cjenm/images/arrow_w.svg) no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    border: 1px solid #666;
+    border-top: 0;
+    border-bottom: 0;
+}
+.sec2_business {
+    display: flex;
+}
+.sec2_business .bu {
+    flex-direction: column;
+    width: 17%;
+    height: 960px;
+}
+.bu > h2 {
+    display: flex;
+    font: 800 3.625rem/1.2 'Nanum Gothic';
+    letter-spacing: -1.5px;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.bu > span {
+    padding: 8px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font: 700 1.25rem/2 'Nanum Gothic';
+    letter-spacing: -1px;
+}
+.bu > span:nth-child(3)::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    top: -4px;
+}
+.bu.bg3 > span:nth-child(4)::before,
+.bu.bg4 > span:nth-child(4)::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    top: -4px;
+}
+.bu.bg2 > span, .bu.bg5 > span {
+    margin: 56px 0;
+}
+.bu.bg1 > span:nth-child(2) {
+    margin: 28px 0 0 0;
+}
+.bu.bg1 {
+    background: url(/ezSHW/cjenm/images/bu_tvshow.png) no-repeat;
+    background-size: cover;
+}
+.bu.bg2 {
+    background: url(/ezSHW/cjenm/images/bu_film.png) no-repeat;
+    background-size: cover;
+}
+.bu.bg3 {
+    background: url(/ezSHW/cjenm/images/bu_music.png) no-repeat;
+    background-size: cover;
+}
+.bu.bg4 {
+    background: url(/ezSHW/cjenm/images/bu_digital_ott.png) no-repeat;
+    background-size: cover;
+}
+.bu.bg5 {
+    background: url(/ezSHW/cjenm/images/bu_performing.png) no-repeat;
+    background-size: cover;
+}
+.bu.bg6 {
+    background: url(/ezSHW/cjenm/images/bu_animation.png) no-repeat;
+    background-size: cover;
+}
+.sec3_ir {
+    background: url(/ezSHW/cjenm/images/ir_bt.png) no-repeat;
+    background-size: cover;
+    height: 960px;
+}
+.sec3_ir .inner > a {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.ir_txt {
+    padding: 200px 0 0 0;
+    color: #fff;
+}
+.ir_txt > h1 {
+    font: 800 5rem 'Nanum Gothic';
+    letter-spacing: -1px;
+    padding: 0 0 30px 0;
+}
+.ir_txt > span {
+    font: 400 1.25rem 'Nanum Gothic';
+    letter-spacing: -0.5px;
+}
+.ir_sub {
+    position: absolute;
+    top: -160px;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+}
+.ir_sub .box {
+    width: 300px;
+    height: 300px;
+    border: 0.5px solid #fff;
+    position: relative;
+    padding: 60px;
+    margin: 3px;
+}
+.box .box_txt > span:first-child {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    color: #fff;
+    font: 400 0.75rem 'Nanum Gothic';
+    letter-spacing: -0.6px;
+}
+.box .box_txt > span:first-child::after {
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    position: absolute;
+    top: 2px;
+    right: -10px;
+    margin: 0 0 0 10px;
+}
+.box .box_txt > h2 {
+    font: 700 2.625rem 'Nanum Gothic';
+    letter-spacing: -1.2px;
+    padding: 0 0 20px 0;
+    height: 40%;
+}
+.box .box_txt > span {
+    font: 400 1rem 'Nanum Gothic';
+    letter-spacing: -0.6px;
+}
+.sec4_word {
+    display: flex;
+    align-items: center;
+    background: url(/ezSHW/cjenm/images/cjenm_words_bt.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(5, 29, 114, 0.6);
+    background-blend-mode: multiply;
+    min-height: 500px;
+}
+.word_txt {
+    font: 800 5.625rem 'Nanum Gothic';
+    letter-spacing: -1.5px;
+    color: #fff;
+    line-height: 120%;
+}
+.word_txt > em {
+    color: #FF9700;
+    font-style: normal;
+}
+footer {
+    display: flex;
+    background-color: #00003C;
+    color: #fff;
+    height: 960px;
+}
+.channel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 150px;
+    margin: 20px 0;
+}
+.channel .ch_box {
+    width: 280px;
+    height: 110px;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.txt_hover {
+    display: none;
+    font: 400 1rem 'Nanum Gothic';
+    letter-spacing: -0.8px;
+    text-align: center;
+}
+.tvn_logo {
+    background: url(/ezSHW/cjenm/images/tvn_logo.svg) no-repeat;
+    background-size: 50% 50%;
+    height: 100%;
+    background-position: center;
+}
+.mnet_logo {
+    background: url(/ezSHW/cjenm/images/mnet_logo.svg) no-repeat;
+    background-size: 55% 55%;
+    height: 100%;
+    background-position: center;
+}
+.ocn_logo {
+    background: url(/ezSHW/cjenm/images/ocn_logo.svg) no-repeat;
+    background-size: 50% 50%;
+    height: 100%;
+    background-position: center;
+}
+.toon_logo {
+    background: url(/ezSHW/cjenm/images/tooniverse_logo.svg) no-repeat;
+    background-size: 80% 80%;
+    height: 100%;
+    background-position: center;
+}
+.sitemap {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.sitemap .map {
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 30px 0 0 0;
+}
+.sitemap .map > h2 {
+    font: 700 1.5rem 'Nanum Gothic';
+    letter-spacing: -1px;
+    padding: 0 0 30px 0;
+}
+.sitemap .map li a {
+    font: 400 1rem/2 'Nanum Gothic';
+    letter-spacing: -0.8px;
+    padding: 0 0 30px 0;
+}
+.map:last-child {
+    border-right: none;
+}
+.map:last-child > h2::after {
+    content: "\f35d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 0 0 10px;
+}
+.foot_box {
+    height: 25%;
+    margin: 30px 0 0 0;
+    position: relative;
+}
+.foot_box .foot_link {
+    display: flex;
+    font: 400 0.875rem 'Nanum Gothic';
+    letter-spacing: -1px;
+}
+.foot_link li a::after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+.snsicon {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+.snsicon li {
+    width: 24px;
+    height: 100%;
+    margin-right: 15px;
+}
+.snsicon li a {
+    display: flex;
+    justify-content: center;
+}
+.fa-brands.fa-youtube,
+.fa-brands.fa-facebook,
+.fa-brands.fa-instagram {
+    font-size: 20px;
+}
+.family_site {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    margin: 10px 0 0 0;
+    right: 0;
+}
+.family_site .site_open {
+    width: 150px;
+    position: absolute;
+    right: 0;
+    font: 800 1.25rem 'Nanum Gothic';
+}
+.fa-solid.fa-plus {
+    font-size: 1.25rem;
+    margin-left: 10px;
+}
+.family_wrap {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    z-index: 40;
+    background-color: #04045E;
+    width: 240px;
+    height: 350px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.family_wrap.on {
+    display: block;
+}
+.family_wrap dd:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.family_wrap dl {
+    margin: 15px 0;
+}
+.family_wrap dl > dt {
+    font: 800 1rem/1.2 'Nanum Gothic';
+    padding: 5px 0 5px 20px;
+}
+.family_wrap dl > dd {
+    font: 400 0.75rem/1.5 'Nanum Gothic';
+    margin-top: 5px;
+    padding: 5px 0 5px 20px;
+}
+.family_wrap::-webkit-scrollbar {
+    width: 8px;
+}
+.family_wrap::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.foot_add {
+    position: relative;
+    width: 50%;
+    font: 400 0.875rem/1.8 'Nanum Gothic';
+    letter-spacing: -0.8px;
+}
+.foot_add .company > span:last-child {
+    margin: 0 15px;
+}
+.foot_add .company > span:first-child::after {
+    content: "";
+    width: 1px;
+    height: 12px;
+    position: absolute;
+    top: 7px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+.foot_add .address > span:last-child {
+    margin: 0 15px;
+}
+.foot_add .address > span:last-child::before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    position: absolute;
+    top: 57px;
+    background-color: #fff;
+    display: inline-block;
+    margin-left: -7px;
+}
+.foot_add .copyright {
+    margin: 30px 0 0 0;
+}

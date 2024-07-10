@@ -1,0 +1,68 @@
+{
+  "response": {
+    "header": {
+      "resultCode": "00",
+      "resultMsg": "NORMAL SERVICE."
+    },
+    "body": {
+      "numOfRows": 10,
+      "pageNo": 1,
+      "totalCount": 3,
+      "items": {
+        "item": [
+          {
+            "basDt": "20220622",
+            "srtnCd": "035760",
+            "isinCd": "KR7035760008",
+            "itmsNm": "CJ ENM",
+            "mrktCtg": "KOSDAQ",
+            "clpr": "97100",
+            "vs": "-4600",
+            "fltRt": "-4.52",
+            "mkp": "102000",
+            "hipr": "102800",
+            "lopr": "96700",
+            "trqu": "90364",
+            "trPrc": "8904548900",
+            "lstgStCnt": "21929154",
+            "mrktTotAmt": "2129320853400"
+          },
+          {
+            "basDt": "20220621",
+            "srtnCd": "035760",
+            "isinCd": "KR7035760008",
+            "itmsNm": "CJ ENM",
+            "mrktCtg": "KOSDAQ",
+            "clpr": "101700",
+            "vs": "-200",
+            "fltRt": "-.2",
+            "mkp": "101400",
+            "hipr": "103300",
+            "lopr": "101200",
+            "trqu": "45821",
+            "trPrc": "4679910200",
+            "lstgStCnt": "21929154",
+            "mrktTotAmt": "2230194961800"
+          },
+          {
+            "basDt": "20220620",
+            "srtnCd": "035760",
+            "isinCd": "KR7035760008",
+            "itmsNm": "CJ ENM",
+            "mrktCtg": "KOSDAQ",
+            "clpr": "101900",
+            "vs": "-2200",
+            "fltRt": "-2.11",
+            "mkp": "105000",
+            "hipr": "105900",
+            "lopr": "101100",
+            "trqu": "61529",
+            "trPrc": "6295904800",
+            "lstgStCnt": "21929154",
+            "mrktTotAmt": "2234580792600"
+          }
+        ]
+      }
+    }
+  }
+}

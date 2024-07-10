@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 구글폰트 noto sans */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/* 나눔고딕 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+    word-wrap: break-word;
+    /* outline: 1px solid red; */
+}
+html {
+    font-family: 'Nanum Gothic';
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.wrap .list > a {
+    margin: 0 15px;
+}
+h1 {
+    font: 800 3rem 'Nanum Gothic';
+    letter-spacing: -0.5px;
+    position: relative;
+    top: -80px;
+}
+.list {
+    display: flex;
+}
+.namecard {
+    width: 150px;
+    height: 150px;
+    background: url(/ezSHW/printorder/image/namecard_icon.png) no-repeat;
+    background-position: 80% center;
+    background-size: contain;
+}
+.post {
+    width: 150px;
+    height: 150px;
+    background: url(/ezSHW/printorder/image/post_icon.png) no-repeat;
+    background-position: 80% center;
+    background-size: contain;
+}
+.envelope {
+    width: 150px;
+    height: 150px;
+    background: url(/ezSHW/printorder/image/envelope_icon.png) no-repeat;
+    background-position: 80% center;
+    background-size: contain;
+}
+h2 {
+    text-align: center;
+    font: 800 1.5rem 'Nanum Gothic';
+    letter-spacing: -0.5px;
+    padding: 160px 0 0 0;
+    color: #333;
+}

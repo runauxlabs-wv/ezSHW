@@ -1,0 +1,418 @@
+@charset "utf-8";
+
+html {
+    font-size: 12px;
+}
+body {
+    min-width: 320px;
+}
+.inner {
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 40px;
+}
+header .inner .mlogo {
+    background-position: 0% center;
+}
+header .top.on {
+    width: 100%;
+}
+header .top.on .logo {
+    height: 40px;
+    background: url(/ezSHW/binggrae/images/binggrae_logo_w.svg) no-repeat rgb(255, 0, 0);
+    background-size: 45% 45%;
+    background-position: -15% center;
+    margin: 0 0 40px 0;
+}
+header .fa-solid.fa-bars.mmenu {
+    right: 20px;
+    top: 13px;
+}
+header .top.on .fas.fa-times.mclose {
+    right: 20px;
+    top: 8px;
+}
+header .top.on .nav {
+    height: 320px;
+}
+header .top.on .nav div > span {
+    height: 80px;
+}
+header .top.on .nav div > span a::after {
+    height: 80px;
+    font-size: 1.25rem;
+    left: 35%;
+}
+header .top.on .nav div span > a {
+    height: 80px;
+    line-height: 80px;
+    font-size: 1.25rem;
+}
+header .top.on .nav .subnav {
+    height: 320px;
+}
+header .top.on .nav .subnav > ul > li {
+    padding: 0 30px;
+}
+header .top.on .nav .subnav > ul > li > ul > li {
+    height: 40px;
+    line-height: 40px;
+}
+header .top.on .nav .subnav > ul > li > ul > li > a {
+    font: 400 1.25rem 'Nanum Gothic';
+    height: 40px;
+    line-height: 40px;
+}
+header .top.on .nav_right {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 160px;
+    margin: 50px 0;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+header .top.on .nav_right a {
+    font: 400 1.125rem 'Nanum Gothic';
+}
+header .top.on .nav_under {
+    padding: 0;
+    background-color: #fff;
+}
+header .top.on .nav_under li {
+    width: 33.3%;
+    height: 60px;
+    border: 1px solid #ccc;
+}
+header .top.on .nav_under li > a {
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+header .top.on .lang {
+    height: 60px;
+}
+header .top.on .lang a {
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+}
+.lang .select::after {
+    font-size: 1.125rem;
+    right: 0;
+    height: 40px;
+}
+
+.con {
+    width: 90%;
+    height: 50%;
+    margin: 20px auto 0 auto;
+    top: 0;
+    left: 0;
+}
+.con.bt4, .con.bt5 {
+    width: 80%;
+}
+.main_text {
+    position: relative;
+    height: 45%;
+    margin: 0 auto;
+}
+.main_text > p {
+    padding: 20px 0;
+}
+.main_text > button {
+    position: absolute;
+    bottom: 70px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+    font: 1.125rem 'Binggrae-bold';
+}
+.main_text.two > button {
+    color: rgb(127, 184, 234);
+    border: 1px solid rgb(127, 184, 234);
+}
+.main_text.thr > button {
+    color: rgb(248, 207, 223);
+    border: 1px solid rgb(248, 207, 223);
+}
+.main_text.four > button {
+    color: rgb(185, 164, 145);
+    border: 1px solid rgb(185, 164, 145);
+}
+.main_text.five > button {
+    color: rgb(253, 214, 201);
+    border: 1px solid rgb(253, 214, 201);
+}
+.main_text.six > button {
+    color: rgb(105, 185, 5);
+    border: 1px solid rgb(105, 185, 5);
+}
+
+.ani1 {
+    background: url(/ezSHW/binggrae/images/top_shape_ani1_m.png) no-repeat;
+    background-size: 85%;
+    background-position: 50% 5%;
+}
+.ani2 {
+    background: url(/ezSHW/binggrae/images/top_shape_ani2_m.png) no-repeat;
+    background-size: 85%;
+    background-position: 50% 5%;
+}
+.ani3 {
+    background: url(/ezSHW/binggrae/images/top_shape_ani3_m.png) no-repeat;
+    background-size: 85%;
+    background-position: 50% 5%;
+}
+.ani4 {
+    background: url(/ezSHW/binggrae/images/top_shape_ani4_m.png) no-repeat;
+    background-size: 85%;
+    background-position: 50% 5%;
+}
+.ani5 {
+    background: url(/ezSHW/binggrae/images/top_shape_ani5_m.png) no-repeat;
+    background-size: 85%;
+    background-position: 50% 5%;
+}
+.ani6 {
+    background: url(/ezSHW/binggrae/images/top_shape_ani6_m.png) no-repeat;
+    background-size: 85%;
+    background-position: 50% 5%;
+}
+.swiper.mySwiper .swiper-pagination-bullet {
+    display: none;
+}
+.swiper.mySwiper .swiper-button-next::after,
+.swiper.mySwiper .swiper-button-prev::after {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.swiper.mySwiper4 .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical > .swiper-pagination-bullets {
+    top: 5%;
+}
+.section1 {
+    background: url(/ezSHW/binggrae/images/sec1_bt-m.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0;
+}
+.content1 {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    height: 100%;
+}
+.social_left .txt {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 0 10px 0;
+}
+.social_left .txt > h1 {
+    font: bold 2.5rem 'Binggrae-Bold';
+    padding: 0 0 5px 0;
+}
+.social_left .txt > span {
+    font: 500 1rem 'Binggrae';
+}
+.swiper.mySwiper3 {
+    width: 85%;
+    height: 60%;
+}
+.swiper.mySwiper3 .swiper-button-next {
+    right: 15%;
+    top: 60%;
+}
+.swiper.mySwiper3 .swiper-button-prev {
+    left: 15%;
+    top: 60%;
+}
+.circle_box {
+    width: 220px;
+    height: 150px;
+    border-radius: 0;
+}
+.circle_box .back {
+    display: none;
+}
+.icon1, .icon2, .icon3, .icon4, .icon5, .icon6 {
+    background-size: 50% 50%;
+    background-position: center 0%;
+}
+.cir_txt h2 {
+    padding: 80px 0 5px 0;
+}
+.cir_txt p {
+    padding: 0 10px;
+}
+.roY .back {
+    transform: rotateY(0deg);
+}
+.roY:hover .front {
+    transform: rotateY(0deg);
+}
+.roY:hover .back {
+    transform: rotateY(0deg);
+}
+.sns_right {
+    padding: 30px 0 0 0;
+}
+.right_top .top_text br {
+    display: none;
+}
+.right_top .top_text {
+    width: 100%;
+    text-align: center;
+}
+.right_top .top_text > p {
+    padding: 15px;
+}
+.right_top .top_text a {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+}
+.icon_arrow {
+    left: 0;
+    width: 150px;
+    height: 15px;
+}
+video, .video_box {
+    display: none;
+}
+.right_bot {
+    margin: 30px 0 0 0;
+}
+.clip1, .clip2, .clip3, .clip4 {
+    opacity: 1;
+    height: 25px;
+    transform: translateY(0);
+}
+.clip1.on, .clip2.on, .clip3.on, .clip4.on {
+    display: none;
+}
+.clip1 .txt,
+.clip2 .txt,
+.clip3 .txt,
+.clip4 .txt {
+    height: 25px;
+    line-height: 20px;
+}
+.section2 {
+    padding: 0;
+}
+.content2 {
+    padding: 20px 0 0 0;
+}
+.content2 .left_con2 {
+    width: 90%;
+    height: 50%;
+}
+.page .swiper-button-next.cus,
+.page .swiper-button-prev.cus {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+}
+.swiper.mySwiper2,
+.swiper.mySwiper2 .swiper-slide a {
+    height: 100%;
+}
+.swiper.mySwiper2 .swiper-slide .cf {
+    width: 100%;
+    height: 100%;
+}
+.swiper.mySwiper2 .swiper-slide .cf > span {
+    padding: 10px 0;
+    background-color: rgba(255, 0, 0, 0.6);
+    font: 700 1.125rem 'Nanum Gothic';
+}
+.board_right {
+    width: 90%;
+    height: 200px;
+    flex-direction: column;
+    margin: 15px 0;
+}
+.board_right a {
+    height: 45%;
+}
+.board .circle_news,
+.board .circle_notice {
+    width: 22%;
+    height: 75px;
+    margin: 10px 10px;
+}
+.board .txtbox {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.board .txtbox > span:first-child {
+    -webkit-line-clamp: 3;
+    line-height: 1.3;
+    max-height: 85%;
+    margin: 15px 0 0 0;
+}
+footer .inner {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+}
+.foot_top {
+    height: 70%;
+    padding: 10px 0;
+    border-bottom: none;
+    border-top: 1px solid #e3e3e3;
+}
+.foot_link {
+    justify-content: center;
+}
+.foot_link li a {
+    font: 700 1.125rem 'Nanum Gothic';
+}
+.address {
+    text-align: center;
+}
+.cs_center {
+    font: 400 1.125rem 'Nanum Gothic';
+    padding: 0 10px 0 0;
+}
+.cs_txt {
+    font: 700 1.125rem 'Nanum Gothic';
+}
+.address p {
+    font: 400 1rem 'Nanum Gothic';
+    display: block;
+}
+.foot_bot {
+    height: 30%;
+    padding: 10px 0;
+    align-items: center;
+}
+.foot_bot .logo_eng {
+    width: 50%;
+    height: 40px;
+    background-position: center;
+}
+.foot_bot .copyright {
+    justify-content: center;
+    padding-left: 0;
+    font: 700 1rem 'Nanum Gothic';
+    letter-spacing: 0;
+}
+footer .sel_box {
+    display: none;
+}
+.foot_bot .snsicon {
+    display: none;
+}

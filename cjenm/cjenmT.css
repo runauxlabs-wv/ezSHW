@@ -1,0 +1,350 @@
+@charset "uft-8";
+
+html {
+    font-size: 14px;
+}
+body {
+    min-width: 768px;
+}
+.inner {
+    width: 90%;
+    margin: 0 auto;
+}
+header .inner {
+    width: 100%;
+}
+.nav {
+    padding-left: 51%;
+}
+.nav > li > ul {
+    padding: 0 40% 0 33%;
+}
+.nav > li:first-child > ul {
+    padding: 0 10% 0 33%;
+}
+.nav > li:nth-child(2) > ul,
+.nav > li:last-child > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 30px;
+    padding: 15px 12% 15px 33%;
+}
+.nav > li > ul > li {
+    height: 30px;
+}
+.nav > li > ul > li > a {
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+
+
+.top_txt {
+    padding: 200px 0 0 0;
+}
+.top_txt > span {
+    font: 700 1.5rem/1.3 'Nanum Gothic';
+}
+.dia_icon {
+    margin: 50px auto;
+}
+.arrow {
+    bottom: 10%;
+}
+
+.left_liveir,
+.right_news {
+    padding: 0;
+}
+.left_liveir {
+    width: 45%;
+}
+.liveir {
+    padding: 0 0 15px 0px;
+    flex-direction: column;
+}
+.liveir > h5 {
+    padding: 7px 0 0 105px;
+}
+.irsub {
+    padding: 0 0 0 10px;
+    width: 55%;
+}
+.news_sub {
+    height: 72px;
+}
+.news_sub a {
+    height: 50px;
+    -webkit-line-clamp: 2;
+    line-height: 1.7;
+    max-height: 60%;
+    margin: 10px 0 22px 0;
+}
+.sub_txt {
+    height: 50px;
+}
+.sub_txt > h4 {
+    width: 100%;
+    height: 35px;
+    align-items: center;
+}
+.sub_txt > span {
+    display: none;
+}
+.pre_arrow,
+.next_arrow {
+    width: 13%;
+}
+
+.sec2_business .box > ul {
+    height: 58px;
+}
+.sec2_business .box > ul > li {
+    width: 15%;
+}
+.sec2_business .box .con {
+    flex-direction: column;
+}
+.con .conbox {
+    height: 150px;
+    width: 100%;
+}
+.contxt {
+    display: flex;
+    position: relative;
+    top: 0;
+}
+.contxt > h2 {
+    width: 45%;
+    height: 100%;
+    justify-content: flex-start;
+    padding-left: 40px;
+    text-align: left;
+    color: #fff;
+}
+.contxt > h2 > br {
+    display: none;
+}
+.contxt > span {
+    padding: 0 28px 0 0;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contxt > span:nth-child(3)::before {
+    top: 48%;
+    left: -25%;
+}
+.bg3 .contxt > span:nth-child(4)::before {
+    top: 48%;
+    left: -25%;
+}
+.bg4 .contxt > span:nth-child(3)::before {
+    top: 48%;
+    left: -15%;
+}
+.bg4 .contxt > span:nth-child(4)::before {
+    top: 48%;
+    left: -21%;
+}
+.bg6 .contxt > span:nth-child(3)::before {
+    top: 48%;
+    left: -10%;
+}
+.bg2 .contxt > span,
+.bg5 .contxt > span {
+    padding: 0;
+}
+.bg1 .contxt > span:nth-child(2) {
+    padding: 0 28px 0 0;
+}
+.contxt .bt::after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0 0 0 7px;
+    position: relative;
+    top: 3px;
+}
+.contxt > p {
+    padding: 100px 0;
+    display: none;
+}
+.contxt > button {
+    display: none;
+}
+.conbox:hover .contxt,
+.conbox.on .contxt {
+    padding: 50px 0 0 0;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.conbox:hover .contxt > h2,
+.conbox.on .contxt > h2 {
+    display: block;
+    width: 100%;
+    height: 30%;
+    left: 55px;
+}
+.conbox:hover .contxt > p,
+.conbox.on .contxt > p {
+    display: block;
+    position: relative;
+    width: 70%;
+    height: 30%;
+    left: 100px;
+    top: 0;
+}
+.conbox:hover .contxt > button,
+.conbox.on .contxt > button {
+    position: relative;
+    top: 0;
+    left: 100px;
+}
+.con {
+    position: relative;
+}
+.con .conbox.on:nth-child(2) div,
+.con .conbox.on:nth-child(3) div,
+.con .conbox.on:nth-child(4) div,
+.con .conbox.on:nth-child(5) div,
+.con .conbox.on:last-child div {
+    position: absolute;
+    top: 0;
+}
+.con .conbox:hover:nth-child(2) div,
+.con .conbox:hover:nth-child(3) div,
+.con .conbox:hover:nth-child(4) div,
+.con .conbox:hover:nth-child(5) div,
+.con .conbox:hover:last-child div {
+    position: absolute;
+    top: 0;
+}
+
+.bg1 {
+    background: url(/ezSHW/cjenm/images/bu_tvshow_m.png) no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.bg1::before {
+    background: url(/ezSHW/cjenm/images/bu_tvshow_m_hover.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 902px;
+}
+.bg2 {
+    background: url(/ezSHW/cjenm/images/bu_film_m.png) no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.bg2::before {
+    background: url(/ezSHW/cjenm/images/bu_film_m_hover.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 902px;
+}
+.bg3 {
+    background: url(/ezSHW/cjenm/images/bu_music_m.png) no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.bg3::before {
+    background: url(/ezSHW/cjenm/images/bu_music_m_hover.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 902px;
+}
+.bg4 {
+    background: url(/ezSHW/cjenm/images/bu_digital_ott_m.png) no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.bg4::before {
+    background: url(/ezSHW/cjenm/images/bu_digital_ott_m_hover.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 902px;
+}
+.bg5 {
+    background: url(/ezSHW/cjenm/images/bu_performing_m.png) no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.bg5::before {
+    background: url(/ezSHW/cjenm/images/bu_performing_m_hover.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 902px;
+}
+.bg6 {
+    background: url(/ezSHW/cjenm/images/bu_animation_m.png) no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.bg6::before {
+    background: url(/ezSHW/cjenm/images/bu_animation_m_hover.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 902px;
+}
+
+/* 섹션3 ir */
+.sec3_ir .inner {
+    justify-content: center;
+}
+.ir_txt {
+    text-align: center;
+    padding: 100px 0 70px 0;
+}
+.ir_txt .ir_h1 {
+    padding: 0 0 15px 0;
+}
+.ir_sub {
+    width: 700px;
+    height: 600px;
+    justify-content: center;
+    bottom: 80px;
+}
+.ir_sub .box {
+    width: 300px;
+    height: 280px;
+    padding: 40px;
+}
+
+
+.sec4_word {
+    min-height: 450px;
+}
+.word_txt {
+    font: 800 5rem 'Nanum Gothic';
+    text-align: center;
+    line-height: 1;
+}
+
+footer {
+    height: 760px;
+}
+.channel .ch_box {
+    width: 24%;
+    height: 80px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    position: relative;
+}
+.txt_hover1, .txt_hover2, .txt_hover3, .txt_hover4 {
+    font: 400 1rem 'Nanum Gothic';
+    height: 80px;
+    letter-spacing: -0.2px;
+    padding: 25px 0;
+}
+.txt_hover3 > br,
+.txt_hover4 > br {
+    display: block;
+}
+.sitemap {
+    height: 40%;
+}
+.foot_add .address > span:last-child::before {
+    top: 50px;
+}

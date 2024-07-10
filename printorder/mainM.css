@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+html{
+    font-size: 12px;
+}
+body{
+    min-width: 320px;
+}
+.list{
+    flex-direction: column;
+}
+.wrap .list > a{
+    margin: 0;
+    padding-bottom: 50px;
+}

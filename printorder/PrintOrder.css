@@ -1,0 +1,360 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 구글폰트 noto sans */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/* 나눔고딕 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+    word-wrap: break-word;
+    /* outline: 1px solid red; */
+}
+html{
+    font-family: 'Nanum Gothic';
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.order_area {
+    display: flex;
+    flex-direction: column;
+}
+.order_area > h2{
+    font: 800 2rem 'Nanum Gothic';
+    letter-spacing: -0.5px;
+    text-align: center;
+    padding : 60px;
+}
+.order_area > ul{
+    display: flex;
+    width: 100%;
+    padding: 25px 0 50px 0;
+}
+.order_area > ul > li{
+    width: 25%;
+    height: 50px;
+}
+.order_area > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #333;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    background-color: #e6e6e6;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    border-left: 1px solid #ccc;
+}
+.order_area > ul > li:first-child > a{
+    border-left: none;
+}
+.conbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 1rem;
+    flex-direction: column;
+}
+.selectList{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+.selectList .plist, .psize, .thin{
+    width: 20%;
+    border-right: 1px solid #ccc;
+}
+.selectList .moreInfo{
+    width: 50%;
+}
+.plist > h4, .psize > h4, .thin > div > h4,
+.moreInfo > h4, .priceT > h4, .sum > h4, .attention > h4{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgb(0,92,169);
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+.selectList > div > ul > li,
+.thin > div > ul > li,
+.moreInfo > table{
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+}
+.selectList > div > ul > li > label,
+.thin > div > ul > li > label{
+    padding: 0 10px;
+}
+.wbox, .hbox{
+    width: 40%;
+}
+.wbox > span:first-child,
+.wbox > span:last-child{
+    padding: 0 0 0 25px;
+}
+.wbox > input, .hbox > input, select{
+    margin: 0 0 0 10px;
+    width: 60px;
+    height: 30px;
+    border-radius: 3px;
+    border : 1px solid #ccc;
+    font: 700 0.875rem 'Nanum Gothic';
+    letter-spacing: -0.5px; 
+    text-align: center;
+}
+.select{
+    display: none;
+    margin: 0 0 0 10px;
+    width: 110px;
+    height: 30px;
+    border-radius: 3px;
+    border : 1px solid #ccc;
+    font: 700 0.875rem 'Nanum Gothic';
+    letter-spacing: -0.5px; 
+    text-align: center;
+}
+#quantity1, #quantity2{
+    display: none;
+}
+input:read-only {
+    background: #f8f8f8;
+}
+tbody > tr:nth-child(5){
+    height: 70px;
+}
+tbody > tr:nth-child(6),
+tbody > tr:nth-child(7),
+tbody > tr:last-child{
+    height: 52px;
+}
+td{
+    height: 40px;
+}
+tr{
+    position: relative;;
+}
+.title{
+    width: 25%;
+}
+.wbox::after{
+    content: "X";
+    font: 400 0.875rem 'Nanum Gothic'; 
+    padding: 0 0 0 25px;
+}
+.hbox::after{
+    content: "mm";
+    font: 400 0.875rem 'Nanum Gothic'; 
+}
+select{
+    padding-left: 10px;
+}
+select > option {
+    font: 400 0.875rem 'Nanum Gothic';
+    text-align: left;
+}
+.postlist{
+    width: 380px;
+    text-align: center;
+}
+.postlist > a{
+    display: inline-block;
+    width: 29%;
+    margin: 0 5.5px;
+    border: 1px solid #ccc;
+    color: #000;
+    font: 400 0.875rem 'Nanum Gothic';
+    height: 35px;
+    line-height: 35px; 
+    border-radius: 3px;
+}
+.postlist > a:active{
+    border: 1px solid rgb(229,0,81);
+}
+.postpro1 > select, .postpro2 > select, .postpro3 > select{
+    width: 63.5%;
+}
+.postpro1.on > select, .postpro2.on > select, .postpro3.on > select{
+    position: relative;
+    top: -52px;
+    right: -121px;
+    width: 242px;
+}
+.post_tit{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin: 0 5px 0 11px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font: 400 0.875rem 'Nanum Gothic';
+    letter-spacing: -0.5px;
+    height: 30px;
+    line-height: 30px;
+}
+.postpro1, .postpro2, .postpro3{
+    display: none;
+    height: 52px;
+    line-height: 52px;
+}
+.postpro1.on, .postpro2.on, .postpro3.on{
+    display: block;
+    position: relative;
+    width: 202px;
+}
+.popup{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255,255,255,0.6);
+}
+.popup .box{
+    width: 300px;
+    height: 250px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1000;
+    top: 30%;
+    left: 40%;
+    padding: 20px 30px;
+}
+.box > p{
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+.box > p:nth-child(2){
+    font: 700 1.75rem 'Nanum Gothic';
+    width: 100%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    margin: 10px 0;
+    color: #333;
+}
+.box > p:nth-child(3){
+    font: 700 1.25rem 'Nanum Gothic';
+    width: 100%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    margin: 20px 0;
+    color: red;
+    height: 30px;
+}
+.fas.fa-times.mclose{
+    display: flex;
+    color: #333;
+    font-size: 1rem;
+    justify-content: flex-end;
+    height: 20px;
+}
+.total{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+}
+.attention{
+    width: 75%;
+    background-color: #fff;
+}
+.att_txt{
+    padding: 40px;
+}
+.att_txt > p:nth-child(odd){
+    margin: 0 0 5px 0;
+    font: 700 1.125rem 'Nanum Gothic';
+    letter-spacing: -0.25px;
+}
+.att_txt > p:nth-child(odd)::before{
+    content: "\f101";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin: 0 5px 0 0;
+}
+.att_txt > p:nth-child(even){
+    margin: 0 0 20px 5px;
+    font: 400 0.875rem 'Nanum Gothic';
+    letter-spacing: -0.25px;
+}
+.att_txt > p > b{
+    color: red;
+}
+.totalsum{
+    width: 25%;
+    justify-content: flex-end;
+    border-left: 1px solid #ccc;
+}
+.priceT > div,
+.sum > div{
+    padding: 0 0 0 30px;
+    font: 400 1.25rem 'Nanum Gothic'; 
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+.sum > div:last-child{
+    font: 800 1.5rem 'Nanum Gothic'; 
+}
+.priceT > div:last-child,
+.sum > div:nth-child(3){
+    margin: 0 0 20px 0;
+}
+.sum > div:last-child{
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(229,0,81);
+    color: #fff;
+}
+.priceT > div > label,
+.sum > div > label{
+    width: 150px;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    display: flex;
+    border: none;
+    height: 40px;
+    font: 700 1.25rem 'Nanum Gothic';
+    padding: 8px 0 4px 0;
+    background-color: transparent;
+    text-align: right;
+}
+.sum > div:last-child > label{
+    width: 150px;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    display: flex;
+    border: none;
+    height: 60px;
+    font: 800 1.5rem 'Nanum Gothic';
+    padding: 15px 0;
+    background-color: transparent;
+    text-align: right;
+}
